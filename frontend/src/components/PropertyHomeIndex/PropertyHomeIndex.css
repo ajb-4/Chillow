@@ -1,0 +1,22 @@
+
+#prophomeindex-grid {
+    width: 100%;
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+
+.listingthumbnail {
+    height: 283px;
+    max-width: 345px;
+    border-radius: 5.5px;
+    border: 0.5px solid gray;
+    overflow: hidden;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.2);
+}
+
+.listingthumbnail:hover {
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.3);
+    transform: scale(1.01);
+}

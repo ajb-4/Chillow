@@ -1,0 +1,309 @@
+#homeshow-outtercontainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#homeshow-imagecontainer  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px;
+    grid-gap: 5px;
+    overflow: auto;
+}
+
+#homeshow-image {
+    object-fit: cover;
+    height: 300px;
+    width: 370px;
+}
+
+#homeshow-detailscontainer {
+    width: 835px;
+}
+
+#homeshow-slideabledeatils {
+    overflow: auto;
+}
+
+#homeshow-headingtab {
+    border-bottom: 1px solid lightgray;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 8px;
+}
+
+#homeshow-logo {
+    height: 40px;
+    
+}
+
+#homeshow-headerlink {
+    color: rgb(0, 106, 255);
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    width: 100%;
+    font-size: 16px;
+}
+
+#homeshow-detailscontainer-belowheader {
+    padding: 15px;
+}
+
+#homeshow-numnericaldetails {
+    display: flex;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+   
+}
+
+#homeshow-price {
+    font-size: 35px;
+    text-shadow: 0.7px 0px 0px black;
+}
+
+#homeshow-bedsbathssqft {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    margin-left: 20px;
+    width: 180px;
+}
+
+.homeshowsepbars {
+    color: rgb(185, 183, 183);
+}
+
+#homeshowaddress {
+    display: flex;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+}
+
+#homeshowaddress div {
+    margin: 3px;
+}
+
+#homeshow-forsale {
+    padding-left: 3px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#homeshow-redforsaledot {
+    font-size: 10px;
+    color: rgb(251, 85, 52);
+}
+
+#homeshow-forsaletext {
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    text-shadow: 0.7px 0px 0px black;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#homeshow-zestimate {
+    display: flex;
+    padding-left: 8px;
+}
+
+#homeshow-zestimate div {
+    margin: 5px;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+
+#homeshow-zestbar {
+    color: gray; 
+}
+
+#homeshow-zestimatetext {
+    size: 19px;
+}
+
+#homeshow-zestimatevalue {
+    text-shadow: 0.7px 0px 0px black;
+}
+
+#homeshow-monthlyestimate {
+    display: flex;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#homeshow-monthlyestimatetext {
+    text-shadow: 0.9px 0px 0px black;
+}
+
+#homeshow-monthlyestimatevalue {
+    margin-left: 5px;;
+}
+
+#homeshow-detailsmenu {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    height: 57px;
+}
+
+#homeshow-detailsmenu-overview {
+    margin-left: 15px;
+}
+
+#homeshow-detailsmenu-facts {
+    margin-left: 25px;
+}
+
+#toggleto-overview {
+    height: 53px;
+    font-size: 16px;
+    color: rgb(0, 106, 255);
+    border: none;
+    background-color: white;
+}
+
+#toggleto-facts {
+    height: 53px;
+    font-size: 16px;
+    color: rgb(0, 106, 255);
+    border: none;
+    background-color: white;
+}
+
+#toggleto-overview:hover {
+    color: rgb(154, 189, 239);
+}
+
+#toggleto-facts:hover {
+    color: rgb(154, 189, 239);
+}
+
+#homeshow-quickfacts {
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+    padding-left: 15px;
+}
+
+#homeshow-quickfacts div {
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+#homeshow-quickfacts i {
+    font-size: 21px;
+    color: rgb(1, 64, 152);
+    margin-left: 5px;
+}
+
+.quickfacts-text {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+#homeshow-overview {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    border-bottom: 1px solid lightgrey;
+}
+
+#homeshow-overviewtext {
+    font-size: 24px;
+    text-shadow: 0.8px 0px 0px black;
+}
+
+#homeshow-description {
+    font-size: 15px;
+    padding-top: 15px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+#homeshow-description-expanded {
+    font-size: 15px;
+    padding-top: 15px;
+    max-height: none;
+    overflow: hidden;
+}
+
+
+#toggleexpanddescription {
+    color: rgb(2, 63, 147);
+    font-size: 16px;
+    text-shadow: 1.0px 0px 0px rgb(2, 63, 147);
+    margin-top: 10px;
+}
+
+#toggleexpanddescription:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#homepage-listingstats {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#homepage-listingstats > div {
+    margin-right: 25px;
+    font-size: 16px;
+}
+
+.boldedfont {
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    text-shadow: 1px 0px 0px black;
+}
+
+#homeshow-saves {
+    display: flex;
+}
+
+#homeshow-timeonzillow {
+    display: flex;
+}
+
+#homeshow-bedsbathssqft div {
+    display: flex;
+}
+
+#homeshow-factsandfeatures {
+    padding-top: 20px;
+    padding-left: 15px;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    border-bottom: 1px solid lightgrey;
+}
+
+#factsandfeaturesheading {
+    text-shadow: 1px 0px 0px black;
+    font-size: 24px;
+}
+
+#factsandfeaturesinterior {
+    padding: 15px;
+}
+
+#factsandfeaturesinteriorheading {
+    text-shadow: 1px 0px 0px black;
+}
+
+

@@ -1,0 +1,83 @@
+#editsearch-outtercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#editsearch-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    text-shadow: 1px 0px 0px black;
+}
+
+#editsearch-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+
+#editsearch-footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+
+#editsearch-leftside {
+    display: flex;
+    align-items: center;
+}
+
+#editsearch-rightside {
+    display: flex;
+    align-items: center;
+}
+
+#editsearch-footer input {
+    height: 45px;
+    width: 70px;
+    margin: 5px;
+}
+
+/* #editsearch-outtercontainer > div {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-shadow: 0.8px 0px 0px black;
+} */
+
+/* #createsearch-outtercontainer > div:focus {
+    border: 1px solid (0, 106, 255);
+    background-color: rgb(193, 227, 245);
+} */
+
+/* #createsearch-outtercontainer > div:hover {
+    background-color: rgb(232, 230, 230);
+} */
+
+#savesearch-button {
+    height: 85%;
+    width: 100%;
+    border: none;
+    background-color: white;
+    margin-top: 2px;
+}
+
+#createsearch-outtercontainer > input {
+    border: none;
+}

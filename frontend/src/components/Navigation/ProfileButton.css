@@ -1,0 +1,35 @@
+#profdropdownmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    background-color: white;
+    font-size: 13px;
+    text-shadow: 0.7px 0px 0px black;
+    height: 300px;
+    width: 270px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+}
+
+#profdropdownmenu > div {
+    height: 74px;
+    padding: 15px;
+}
+
+#profdropdownmenu > div:hover {
+    background-color: rgb(229, 242, 249);
+}
+
+#profdropdown-signout {
+    border-top: 2px solid lightgrey;
+}
+
+#signout-button {
+    border: none;
+    background-color: white;
+}
+
+#signout-button:hover {
+    background-color: rgb(229, 242, 249);
+}

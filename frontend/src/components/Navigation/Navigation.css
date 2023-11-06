@@ -1,0 +1,50 @@
+.navbar-elements {
+    border-bottom: 1.5px solid lightgrey;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 71.5px;
+}
+
+#zillowhomebutton {
+    color: #1277e1;
+    margin-left: 35%;
+    transform: scale(.50);
+    margin-bottom: 3%;
+}
+
+.signin-button {
+    margin-right: 2%;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 10;
+    color: rgb(52, 48, 48);
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+
+#signin-up-profilebutton {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profiledropdownbutton {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 40px;
+    font-weight: 10;
+    color: rgb(52, 48, 48);
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+
+
+

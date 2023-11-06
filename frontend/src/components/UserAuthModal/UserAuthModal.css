@@ -1,0 +1,46 @@
+#toggleto-signin {
+    border: none;
+    background-color: white;
+    height: 66px;
+    font-size: 15px;
+    color: rgb(42, 42, 51);
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+
+#toggleto-signup {
+    border: none;
+    background-color: white;
+    height: 65px;
+    font-size: 15px;
+    color: rgb(42, 42, 51);
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+
+.clickedForm {
+    border-bottom: 4px solid rgb(5, 123, 248);
+}
+
+.toggleFormMenu {
+    display: inline-flex;
+    margin-left: 2%;
+}
+
+#userauth-modalheader {
+    border-bottom: 1.5px solid lightgrey;
+}
+
+#welcomemessage {
+    text-align: center;
+    font-weight: 290;
+    font-size: 25px;
+}
+
+#toggleto-signin:hover {
+    color:rgb(0, 106, 255);
+}
+
+#toggleto-signup:hover {
+    color:rgb(0, 106, 255);
+}
+
+

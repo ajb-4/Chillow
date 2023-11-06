@@ -1,0 +1,33 @@
+#backgroundphoto-container {
+    height: 408px;
+    overflow: hidden;
+}
+
+#background-image {
+    position: relative;
+    object-fit: cover;
+    height: 408px;
+    width: 100%;
+}
+
+#mainpage-slogan {
+    position: relative;
+    color: red;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainpage-searchbar-container {
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mainpage-searchbar {
+    background-color: rgb(148, 227, 199);
+}
+

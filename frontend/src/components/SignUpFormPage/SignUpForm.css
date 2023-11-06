@@ -1,0 +1,160 @@
+.invalidPassword {
+    color: rgb(162, 4, 4);
+}
+
+.validPassword {
+    color: green
+}
+
+
+
+#termsofuse {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(89, 107, 130);
+}
+
+#emailFieldSignUp {
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    height: 22px;
+    width: 81%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    border: 2px solid lightgray;
+}
+
+#passwordFieldSignUp {
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    height: 22px;
+    width: 81%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    border: 2px solid lightgray;
+}
+
+#emailFieldSignUp:hover {
+    border: 2px solid blue;
+}
+
+#emailFieldSignUp:focus {
+    box-shadow: 0 0 15px rgb(0, 77, 99);
+}
+
+#passwordFieldSignUp:hover {
+    border: 2px solid blue;
+}
+
+#passwordFieldSignUp:focus {
+    box-shadow: 0 0 15px rgb(0, 77, 99);
+}
+
+#passwordvalidations {
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.signUpFormContainer {
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#emaillabel-signup {
+    font-size: 14px;
+    color: rgb(42, 42, 51);
+    padding-bottom: 6px;
+    margin-left: 6%;
+    text-shadow: 0.5px 0px 0px black;
+}
+
+#passwordlabel-signup {
+font-size: 14px;
+    color: rgb(42, 42, 51);
+    padding-bottom: 6px;
+    margin-left: 6%;
+    text-shadow: 0.5px 0px 0px black;
+}
+
+#signupsubmit-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#signUpSubmitButton {
+    border-radius: 4px;
+    background-color: rgb(0, 106, 255);
+    border-color: rgb(0, 106, 255);
+    color: white;
+    text-align: center;
+    align-self: center;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    font-size: 17px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 88%;
+    height: 48px;
+}
+
+#signUpSubmitButton:hover {
+    background-color: rgb(28, 28, 169);
+    border-color: rgb(28, 28, 169);
+}
+
+#signup-emailcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#signup-passwordcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inputfield {
+    display: flex;
+    justify-content: center;
+}
+
+#landlordsignup {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 6%;
+    margin-top: 4%;
+}
+
+#landlordsentence {
+    margin-left: 3%;
+    font-size: 14px;
+    padding-bottom: 2px;
+}
+
+#landlordcheckbox {
+    transform: scale(1.75);
+    text-decoration: none;
+}
+
+#passwordvalidations p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+

@@ -1,0 +1,58 @@
+#homeindexitem-outtercontainer {
+    height: 280px;
+}
+
+#homeindexitem-outtercontainer:hover {
+    cursor: pointer;
+}
+
+.no-link-underline {
+    text-decoration: none;
+    color: inherit;
+}
+
+#thumbnailphoto {
+    max-height: 150px;
+    width: 100%;
+   
+}
+
+#thumbnailphoto-carousel {
+    max-height: 150px;
+    overflow: hidden;
+}
+
+#homeindexitemprice {
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    text-shadow: 0.3px 0px 0px black;
+    font-size: 20px;
+}
+
+#homeindexitemdetail-container {
+    padding-left: 10px;
+    padding-top: 6px;
+}
+
+#indexitem-numericaldetails {
+   display: flex;
+   font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+   font-size: 14px;  
+}
+
+#indexitem-numericaldetails div {
+   margin: 3px;
+}
+
+.homeindexsepbars {
+    color: rgb(185, 183, 183);
+}
+
+#homeindexitemaddress {
+    display: flex;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    font-size: 14px; 
+}
+
+#homeindexitemaddress div {
+    margin: 2px;
+}

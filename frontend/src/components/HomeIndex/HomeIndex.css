@@ -1,0 +1,66 @@
+#homeindexitems-container {
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+#mainpage-homeindexheader {
+    font-size: 19px;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    text-shadow: 0.4px 0px 0px black;
+}
+
+#mainpage-homeindexsubheader {
+    font-size: 13.5px;
+    color: rgb(79, 91, 103);
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+#mainpagehomeindex-slider {
+    padding-top: 10px;
+    width: 1190px;
+    height: 350px;
+}
+
+.listingthumbnail {
+    height: 283px;
+    max-width: 345px;
+    border-radius: 5.5px;
+    border: 0.5px solid gray;
+    overflow: hidden;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.2);
+}
+
+.listingthumbnail:hover {
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.3);
+    transform: scale(1.01);
+}
+
+button.slick-prev, button.slick-next {
+    background-color: rgb(0, 106, 255);
+    border-radius: 7px;
+    margin: -20px;
+    height: 30px;
+    width: 30px;
+}
+
+button.slick-prev:hover, button.slick-next:hover {
+    background-color: rgb(0, 106, 255);
+    border-radius: 7px;
+    margin: -20px;
+    height: 30px;
+    width: 30px;
+}
+
+button.slick-prev:focus, button.slick-next:focus {
+    background-color: rgb(0, 106, 255);
+    border-radius: 7px;
+    margin: -20px;
+    height: 30px;
+    width: 30px;
+}

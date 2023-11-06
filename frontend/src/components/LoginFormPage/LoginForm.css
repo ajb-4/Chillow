@@ -1,0 +1,135 @@
+#emailFieldSignIn {
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    height: 22px;
+    width: 81%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+}
+
+#passwordFieldSignIn {
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    height: 22px;
+    width: 81%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+}
+
+
+#emailFieldSignIn:hover {
+    border: 2px solid blue;
+}
+
+#emailFieldSignIn:focus {
+    box-shadow: 0 0 15px rgb(0, 77, 99);
+}
+
+#passwordFieldSignIn:hover {
+    border: 2px solid blue;
+}
+
+#passwordFieldSignIn:focus {
+    box-shadow: 0 0 15px rgb(0, 77, 99);
+}
+
+#signInButton {
+    background-color: rgb(0, 106, 255);
+    border-color: rgb(0, 106, 255);
+    border-radius: 4px;
+    color: white;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    font-size: 17px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 88%;
+    height: 48px;
+}
+
+#signInButton:hover {
+    background-color: rgb(28, 28, 169);
+    border-color: rgb(28, 28, 169);
+}
+
+#forgotPasswordLink {
+    color: blue;
+}
+
+#errors p {
+    color: rgb(163, 8, 8);
+    font-size: 11px;
+    margin-left: 6%;
+}
+
+.signInFormContainer {
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#emaillabel-signin {
+    font-size: 14px;
+    color: rgb(42, 42, 51);
+    padding-bottom: 6px;
+    margin-left: 6%;
+    text-shadow: 0.5px 0px 0px black;
+}
+
+#passwordlabel-signin {
+    font-size: 14px;
+    color: rgb(42, 42, 51);
+    padding-bottom: 6px;
+    margin-left: 6%;
+    text-shadow: 0.5px 0px 0px black;
+}
+
+#signinsubmit-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+}
+
+#signin-emailcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#signin-passwordcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inputfield {
+    display: flex;
+    justify-content: center;
+}
+
+#demouserlogin {
+    color: darkblue;
+}
+
+#demouserlogin:hover {
+    color:rgb(0, 106, 255);
+    text-decoration: underline;
+}
+
+#demouserlogincontainer {
+    display: flex;
+    justify-content: center;
+
+}
