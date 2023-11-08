@@ -2,7 +2,7 @@ class Api::LikesController < ApplicationController
 
     wrap_parameters include: Like.attribute_names
 
-    before_action :require_login
+    before_action :require_logged_in
 
     def index
         @likes = current_user.likes
@@ -16,7 +16,7 @@ class Api::LikesController < ApplicationController
 
     def create
         @like = Like.new(like_params)
-
+        debugger
         if @like.save!
             render json: {message: 'Like has been created.'}
         else
