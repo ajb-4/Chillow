@@ -56,3 +56,8 @@
 #homeindexitemaddress div {
     margin: 2px;
 }
+
+button.control-next[aria-label="next slide / item"] {
+    z-index: 2;
+}
+  

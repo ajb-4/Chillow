@@ -9,7 +9,7 @@ import csrfFetch from './store/csrf';
 import * as sessionActions from './store/session';
 import * as homeActions from './store/homes';
 import * as searchActions from './store/search';
-
+import * as likeActions from './store/likes';
 
 const store = configureStore();
 
@@ -19,6 +19,7 @@ if (process.env.NODE_ENV !== 'production') {
   window.sessionActions = sessionActions;
   window.homeActions = homeActions;
   window.searchActions = searchActions;
+  window.likeActions = likeActions;
 }
 
 ReactDOM.render(

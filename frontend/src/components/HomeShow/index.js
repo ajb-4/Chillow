@@ -6,7 +6,7 @@ import thumbnailphoto2 from '../../assets/images/Chillowimage5.jpeg'
 import thumbnailphoto3 from '../../assets/images/ChillowImage6.jpeg'
 import thumbnailphoto4 from '../../assets/images/ChillowImage7.jpeg'
 import thumbnailphoto5 from '../../assets/images/ChillowImage8.jpeg'
-import logo from '../../assets/images/Screenshot 2023-09-20 at 3.41.14 PM.png'
+import logo from '../../assets/images/ChillowFontLogo.png'
 
 
 const HomeShow = ({homeId}) => {

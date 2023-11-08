@@ -6,7 +6,7 @@ import ProfileButton from "./ProfileButton";
 import "./Navigation.css"
 import Modal from "../../Modal";
 import UserAuthModal from "../UserAuthModal";
-import logo from '../../assets/images/Screenshot 2023-09-20 at 3.41.14 PM.png'
+import logo from '../../assets/images/ChillowFontLogo.png'
 
 const Navigation = () => {
 
@@ -20,7 +20,7 @@ const Navigation = () => {
     } else {
         sessionLink = ( 
             <>
-                <button className="signin-button" onClick={() => setIsOpen2(true)}>Sign Alex</button>
+                <button className="signin-button" onClick={() => setIsOpen2(true)}>Sign In</button>
             </>     
         )
     }

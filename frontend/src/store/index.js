@@ -3,12 +3,14 @@ import thunk from 'redux-thunk';
 import session from './session';
 import homes from './homes';
 import search from './search';
+import likes from './likes';
 
 
 const rootReducer = combineReducers({
   session,
   homes,
-  search
+  search,
+  likes
 })
 
 let enhancer;
