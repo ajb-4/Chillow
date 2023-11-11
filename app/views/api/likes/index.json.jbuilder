@@ -1,7 +1,3 @@
-json.likes @likes do |like|
-  json.id like.id
-  json.liker_id like.liker_id
-  json.home_id like.home_id
-  json.created_at like.created_at
-  json.updated_at like.updated_at
+json.array! @likes do |like|
+  json.extract! like, :id, :liker_id, :home_id, :created_at, :updated_at
 end

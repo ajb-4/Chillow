@@ -22,6 +22,38 @@
     overflow: hidden;
 }
 
+.carousel-status {
+    display: none;
+}
+
+#homeindexitemheart-container {
+    position: absolute;
+    top: 9px;
+    right: 11.5px;
+}
+
+#homeindexitemheart-container i {
+    color: rgba(0, 0, 0, 0.305);
+    font-size: 27px;
+}
+
+#homeindexitemheart-container i:hover {
+    color: rgba(0, 0, 0, 0.59);
+}
+
+#homeindexitemheart-border {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+}
+
+#homeindexitemheart-border i {
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+}
+
+
+
 #homeindexitemprice {
     font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
     text-shadow: 0.3px 0px 0px black;

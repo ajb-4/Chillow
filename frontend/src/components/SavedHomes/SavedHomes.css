@@ -1,0 +1,22 @@
+#savedhomes-outtercontainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    background-color: rgb(244, 243, 243);
+    height: 1500px;
+}
+
+#savedhomes-container {
+    width: 1240px;
+}
+
+#savedhomes-header {
+    font-size: 40px;
+    text-shadow: 0.7px 0px 0px black;
+}
+
+#savedhomes-index {
+    display: grid;
+    grid-gap: 25px;
+    /* grid-template-columns: repeat(2, 1fr); */
+}

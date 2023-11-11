@@ -25,8 +25,6 @@ const Navigation = () => {
         )
     }
 
-    console.log('test Alex')
-
     return (
         <>
         <div className="navbar">

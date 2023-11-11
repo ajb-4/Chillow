@@ -16,7 +16,7 @@ const ProfileButton = () => {
         menu = (
            <>
             <div id="profdropdownmenu">
-                <div id='profdropdown-savedhomes'>Saved homes</div>
+                <div id='profdropdown-savedhomes'><Link to={`/favorites`} className="no-link-underline" id='savedhomelink'>Saved homes</Link></div>
                 <div id='profdropdown-savedsearches'><Link to={`/searches`} className="no-link-underline" id='savedsearchlink'>Saved searches</Link></div>
                 <div id='profdropdown-useremail'>{sessionUser.email}</div>
                 <div id='profdropdown-signout'>

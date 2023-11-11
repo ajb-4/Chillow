@@ -32,4 +32,5 @@
 
 #signout-button:hover {
     background-color: rgb(229, 242, 249);
+    cursor: pointer;
 }

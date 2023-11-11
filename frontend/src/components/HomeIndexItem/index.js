@@ -6,6 +6,10 @@ import thumbnailphoto2 from '../../assets/images/Chillowimage5.jpeg'
 import thumbnailphoto3 from '../../assets/images/ChillowImage6.jpeg'
 import thumbnailphoto4 from '../../assets/images/ChillowImage7.jpeg'
 import thumbnailphoto5 from '../../assets/images/ChillowImage8.jpeg'
+import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
+import { createLike, deleteLike } from '../../store/likes';
+
 
 
 
@@ -13,6 +17,9 @@ const HomeIndexItem = ({home}) => {
 
 
     const history = useHistory();
+    const dispatch = useDispatch();
+    const [homeLiked, setHomeLiked] = useState(true);
+    const sessionUser = useSelector(state => state.session.user);
     // const handleClick = () => {
     //     setIsOpen(true);
     //     history.push(`/homes/${home.id}`);
@@ -22,11 +29,34 @@ const HomeIndexItem = ({home}) => {
         return null;
     }
 
+
     const images = home.photoArray;
 
     const handleClick = (e) => {
         if (e.target.classList[0] !== "dot") {
             history.push(`/homes/${home.id}`)
+        }
+    }
+
+    const handleLike = () => {
+        debugger
+        if (!sessionUser.id) {
+            return;
+        }
+
+        if (!homeLiked) {
+            setHomeLiked(true)
+            dispatch(createLike({
+                likerId: sessionUser.id,
+                homeId: home.id
+            }))
+        } else {
+            setHomeLiked(false)
+            debugger
+            dispatch(deleteLike({
+                likerId: sessionUser.id,
+                homeId: home.id
+            }))
         }
     }
 
@@ -55,6 +85,14 @@ const HomeIndexItem = ({home}) => {
                         <img src={thumbnailphoto4} alt='mainpagehouse' id="thumbnailphoto"></img>
                         <img src={thumbnailphoto5} alt='mainpagehouse' id="thumbnailphoto"></img>
                     </Carousel>
+                </div>
+                <div id='homeindexitem-heart' onClick={handleLike}>
+                    <div id='homeindexitemheart-border'>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div id='homeindexitemheart-container'>
+                        <i class="fa-sharp fa-solid fa-heart"></i>
+                    </div>
                 </div>
                 <div id='homeindexitemdetail-container'>
                     <div id='homeindexitemprice-container'>

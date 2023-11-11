@@ -1,12 +1,11 @@
 import React from "react";
-import {Route, Switch, useParams} from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import "./index.css"
 import MainPage from "./components/MainPage";
-import ShowModal from "./ShowModal";
-import HomeShow from "./components/HomeShow";
 import PropertyHome from "./components/PropertyHome";
 import SavedSearches from "./components/SavedSearches";
+import SavedHomes from "./components/SavedHomes";
 
 
 
@@ -29,6 +28,9 @@ function App() {
       </Route>
       <Route path="/searches">
         <SavedSearches/>
+      </Route>
+      <Route path="/favorites">
+        <SavedHomes/>
       </Route>
     </Switch>
    
