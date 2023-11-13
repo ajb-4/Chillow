@@ -14,9 +14,9 @@ class Api::SearchesController < ApplicationController
 
     def create
         @search = Search.new(search_params)
-        # debugger
+        
         if @search.save
-            # debugger
+            
             render :show
         else
             render json: {errors: @search.errors.full_messages}, status: :unprocessable_entity

@@ -66,7 +66,7 @@ export const fetchSearches = () => async dispatch => {
 }
 
 export const createSearch = search => async dispatch => {
-    // debugger
+
     const response = await csrfFetch('/api/searches', {
         method: 'POST',
         headers: {
@@ -74,7 +74,7 @@ export const createSearch = search => async dispatch => {
         },
         body: JSON.stringify(search)
     })
-    // debugger
+   
     if (response.ok) {
         const search = await response.json();
         dispatch(receiveSearch(search))

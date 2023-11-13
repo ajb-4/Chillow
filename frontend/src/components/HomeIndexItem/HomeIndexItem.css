@@ -32,8 +32,19 @@
     right: 11.5px;
 }
 
+#homeindexitemheart-container-white {
+    position: absolute;
+    top: 9px;
+    right: 11.5px;
+}
+
 #homeindexitemheart-container i {
     color: rgba(0, 0, 0, 0.305);
+    font-size: 27px;
+}
+
+#homeindexitemheart-container-white i {
+    color: rgb(255, 255, 255);
     font-size: 27px;
 }
 

@@ -7,7 +7,7 @@ import thumbnailphoto3 from '../../assets/images/ChillowImage6.jpeg'
 import thumbnailphoto4 from '../../assets/images/ChillowImage7.jpeg'
 import thumbnailphoto5 from '../../assets/images/ChillowImage8.jpeg'
 import { useDispatch, useSelector } from 'react-redux';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { createLike, deleteLike } from '../../store/likes';
 
 
@@ -18,17 +18,31 @@ const HomeIndexItem = ({home}) => {
 
     const history = useHistory();
     const dispatch = useDispatch();
-    const [homeLiked, setHomeLiked] = useState(true);
+    const [homeLiked, setHomeLiked] = useState();
     const sessionUser = useSelector(state => state.session.user);
+    const likes = useSelector(state => state.likes);
+
     // const handleClick = () => {
     //     setIsOpen(true);
     //     history.push(`/homes/${home.id}`);
     // }
+
+    useEffect(() => {
+        const likesArray = Object.values(likes);
+        debugger
+        if (likesArray.length > 0) {
+            const hasLiked = likesArray.some(
+                (like) => like.likerId === sessionUser.id && like.homeId === home.id
+            );
+            debugger
+            setHomeLiked(hasLiked);
+        }
+    }, [likes, home.id, dispatch]);
+    
     
     if (!home || !home.photoArray) {
         return null;
     }
-
 
     const images = home.photoArray;
 
@@ -39,7 +53,7 @@ const HomeIndexItem = ({home}) => {
     }
 
     const handleLike = () => {
-        debugger
+
         if (!sessionUser.id) {
             return;
         }
@@ -52,11 +66,12 @@ const HomeIndexItem = ({home}) => {
             }))
         } else {
             setHomeLiked(false)
-            debugger
-            dispatch(deleteLike({
-                likerId: sessionUser.id,
-                homeId: home.id
-            }))
+            const likeId = likes.find(
+                (like) => like.likerId === sessionUser.id && like.homeId === home.id
+            )?.id;
+            if (likeId) {
+                dispatch(deleteLike(likeId));
+            }
         }
     }
 
@@ -90,7 +105,7 @@ const HomeIndexItem = ({home}) => {
                     <div id='homeindexitemheart-border'>
                         <i class="fa-regular fa-heart"></i>
                     </div>
-                    <div id='homeindexitemheart-container'>
+                    <div id={homeLiked ? 'homeindexitemheart-container-white' : 'homeindexitemheart-container'}>
                         <i class="fa-sharp fa-solid fa-heart"></i>
                     </div>
                 </div>

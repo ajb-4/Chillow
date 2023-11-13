@@ -28,17 +28,21 @@ export const getLikes = state => {
 }
 
 export const createLike = like => async dispatch => {
-    debugger
-    const response = await csrfFetch('/api/likes', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(like)
-    });
-    if (response.ok) {
-        const like = await response.json();
-        dispatch(receiveLike(like));
+    try {
+        const response = await csrfFetch('/api/likes', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(like)
+        });
+
+        if (response.ok) {
+            const newLike = await response.json();
+            dispatch(receiveLike(newLike));
+        }
+    } catch (error) {
+        console.error('Error creating like:', error);
     }
 };
 
