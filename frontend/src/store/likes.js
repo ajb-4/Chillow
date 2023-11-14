@@ -65,20 +65,39 @@ export const deleteLike = likeId => async dispatch => {
     }
 };
 
+// const likesReducer = (state = {}, action) => {
+//     let newState = {...state};
+//     switch (action.type) {
+//         case RECEIVE_LIKE:
+//             newState[action.like.id] = action.like ;
+//             return newState
+//         case RECEIVE_LIKES:
+//             return { ...state, ...action.likes };
+//         case REMOVE_LIKE:
+//             delete newState[action.likeId];
+//             return newState;
+//         default:
+//             return state;
+//     }
+// }
+
 const likesReducer = (state = {}, action) => {
-    let newState = {...state};
+    let newState = { ...state };
     switch (action.type) {
         case RECEIVE_LIKE:
-            newState[action.like.id] = action.like ;
-            return newState
+            newState[action.like.id] = action.like;
+            return newState;
         case RECEIVE_LIKES:
-            return { ...state, ...action.likes };
+            action.likes.forEach((like) => {
+                newState[like.id] = like;
+            });
+            return newState;
         case REMOVE_LIKE:
             delete newState[action.likeId];
             return newState;
         default:
             return state;
     }
-}
+};
 
 export default likesReducer;
