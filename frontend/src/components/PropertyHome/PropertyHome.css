@@ -10,7 +10,7 @@
     justify-content: flex-end;
     height: 1300px;
     font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
-    border: 1px solid hotpink;
+    /* border: 1px solid hotpink; */
 }
 
 #propertyhome-mapcontainer {
@@ -22,7 +22,7 @@
 }
 
 #prophome-map {
-    border: 1px solid rgb(105, 255, 150);
+    /* border: 1px solid rgb(105, 255, 150); */
     width: 100%;
 }
 #prophomeindex-grid {

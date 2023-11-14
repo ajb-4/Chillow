@@ -29,12 +29,10 @@ const HomeIndexItem = ({home}) => {
 
     useEffect(() => {
         const likesArray = Object.values(likes);
-        debugger
         if (likesArray.length > 0) {
             const hasLiked = likesArray.some(
                 (like) => like.likerId === sessionUser.id && like.homeId === home.id
             );
-            debugger
             setHomeLiked(hasLiked);
         }
     }, [likes, home.id, dispatch]);
@@ -53,10 +51,11 @@ const HomeIndexItem = ({home}) => {
     }
 
     const handleLike = () => {
-
+        debugger
         if (!sessionUser.id) {
             return;
         }
+        const likesArray = Object.values(likes);
 
         if (!homeLiked) {
             setHomeLiked(true)
@@ -65,10 +64,12 @@ const HomeIndexItem = ({home}) => {
                 homeId: home.id
             }))
         } else {
-            setHomeLiked(false)
-            const likeId = likes.find(
+            setHomeLiked(false);
+            debugger
+            const likeId = likesArray.find(
                 (like) => like.likerId === sessionUser.id && like.homeId === home.id
             )?.id;
+            debugger
             if (likeId) {
                 dispatch(deleteLike(likeId));
             }

@@ -56,6 +56,7 @@ export const fetchLikes = () => async dispatch => {
 }
 
 export const deleteLike = likeId => async dispatch => {
+    debugger
     const response = await csrfFetch(`/api/likes/${likeId}`, {
         method: 'DELETE'
     })
