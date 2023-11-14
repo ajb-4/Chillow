@@ -2,6 +2,7 @@ import './CreateSearch.css';
 import { useState } from 'react';
 import * as searchActions from '../../store/search';
 import { useDispatch, useSelector } from 'react-redux';
+import SearchBar from '../SearchBar';
 
 const CreateSearch = () => {
 
@@ -13,11 +14,19 @@ const CreateSearch = () => {
     const [searcherId, setSearcherId] = useState();
     const [errors, setErrors] = useState();
     const dispatch = useDispatch();
+    const [searchText, setSearchText] = useState();
 
     const sessionUser = useSelector(state => state.session.user);
     
 
     // const [priceDropDown, setDropdownVisible] = useState(false);
+
+    function handleChange(e) {
+        const query = e.target.value;
+        searchText(query);
+        if (query.trim != "") {
+        }
+    }
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -50,9 +59,17 @@ const CreateSearch = () => {
         <>
             <form onSubmit={handleSubmit} id='formcontainer'>
             <div id='createsearch-outtercontainer'>
-            
+                <div id='createsearch-searchbar'>
+                    <input
+                        type='text'
+                        id='searchinput'
+                        placeholder="Find your home"
+                        value={searchText}
+                        onChange={handleChange}>
+                    </input>
+                </div>
                 <div id='forsale-dropdown'>
-                    For sale
+                    <div id='creaetesearch-forsaletext'>For sale</div>
                 </div>
                 <div id='price-dropdown'>
                     <input type='text'

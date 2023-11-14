@@ -1,7 +1,9 @@
-
+import './SearchBar.css';
+import { useState } from 'react';
 
 const SearchBar = () => {
     const [searchText, setSearchText] = useState();
+    const [query, setQuery] = useState();
 
     function handleChange(e) {
         const query = e.target.value;
@@ -17,15 +19,16 @@ const SearchBar = () => {
         }
     }
 
-    function handleSubmit(e) {
-        e.preventDefault;
-        if (query.trim != "") {
-            }
-    }
+    // function handleSubmit(e) {
+    //     e.preventDefault;
+    //     if (query.trim != "") {
+    //         }
+    // }
 
     return () => (
        <> 
         <div className="searchbar-container">
+
             <input
             type='text'
             id='searchinput'
@@ -36,7 +39,7 @@ const SearchBar = () => {
 
         </div>
 
-        <button>Search</button>
+        {/* <button>Search</button> */}
 
         </>
     )

@@ -51,7 +51,7 @@ const HomeIndexItem = ({home}) => {
     }
 
     const handleLike = () => {
-        debugger
+
         if (!sessionUser.id) {
             return;
         }
@@ -65,11 +65,11 @@ const HomeIndexItem = ({home}) => {
             }))
         } else {
             setHomeLiked(false);
-            debugger
+
             const likeId = likesArray.find(
                 (like) => like.likerId === sessionUser.id && like.homeId === home.id
             )?.id;
-            debugger
+
             if (likeId) {
                 dispatch(deleteLike(likeId));
             }
