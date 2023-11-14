@@ -1,6 +1,8 @@
 
 import './ImageAndSearch.css';
-import thumbnailphoto5 from '../../assets/images/ChillowImage8.jpeg'
+import thumbnailphoto5 from '../../assets/images/ChillowImage6.jpeg'
+import SearchBar from '../SearchBar';
+
 const ImageAndSearch = () => {
 
 
@@ -10,11 +12,10 @@ const ImageAndSearch = () => {
         
         
             <div id='backgroundphoto-container'>
-                {/* <div id='mainpage-slogan'>Agents. Tours. Loans. Homes.</div>
+                <div id='mainpage-slogan'>Agents. Tours. Loans. Homes.</div>
                 <div id='mainpage-searchbar-container'>
-                    <input type="text" id="mainpage-searchbar" placeholder='Search for Homes...'></input>
-                </div> */}
-                
+                    <SearchBar/>
+                </div>
                 <img src={thumbnailphoto5} alt='mainpagehouse' id="background-image"></img>
             </div>        
             

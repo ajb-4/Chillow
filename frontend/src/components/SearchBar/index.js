@@ -27,7 +27,7 @@ const SearchBar = () => {
 
     return () => (
        <> 
-        <div className="searchbar-container">
+
 
             <input
             type='text'
@@ -37,7 +37,7 @@ const SearchBar = () => {
             onChange={handleChange}>
             </input>
 
-        </div>
+
 
         {/* <button>Search</button> */}
 

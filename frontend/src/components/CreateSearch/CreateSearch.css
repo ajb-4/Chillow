@@ -17,7 +17,6 @@
 }
 
 #createsearch-outtercontainer > div:focus {
-    border: 1px solid rgb(226, 240, 35);
     /* background-color: rgb(193, 227, 245); */
 }
 
@@ -55,14 +54,25 @@
     border: none;
     border-radius: 5px;
     height: 89%;
-    padding-left: 15px;;
-    
+    padding-left: 15px;
 }
 
 #creaetesearch-forsaletext {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+#createsearch-searchbar {
+    margin-right: 1px;
+    border: none;
+    border-radius: 5px;
+    height: 89%;
+    padding-left: 15px;
+    width: 200px;
+}
+
+
+
 
 
 

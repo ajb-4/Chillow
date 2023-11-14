@@ -1,0 +1,7 @@
+#searchbar-outtercontainer {
+    background-color: white;
+}
+
+#searchbar-outtercontainer:hover {
+    border: 1px solid blue;
+}

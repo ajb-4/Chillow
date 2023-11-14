@@ -11,15 +11,16 @@ const CreateSearch = () => {
     const [beds, setBeds] = useState();
     const [baths, setBaths] = useState();
     const [homeType, setHomeType] = useState();
-    const [searcherId, setSearcherId] = useState();
     const [errors, setErrors] = useState();
     const dispatch = useDispatch();
     const [searchText, setSearchText] = useState();
+    const [query, setQuery] = useState();
 
     const sessionUser = useSelector(state => state.session.user);
     
 
     // const [priceDropDown, setDropdownVisible] = useState(false);
+
 
     function handleChange(e) {
         const query = e.target.value;
@@ -60,6 +61,7 @@ const CreateSearch = () => {
             <form onSubmit={handleSubmit} id='formcontainer'>
             <div id='createsearch-outtercontainer'>
                 <div id='createsearch-searchbar'>
+                    {/* <SearchBar id='createsearch-searchbar'/> */}
                     <input
                         type='text'
                         id='searchinput'
