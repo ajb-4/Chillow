@@ -6,9 +6,6 @@ export const RECEIVE_SEARCH = 'searches/RECEIVE_SEARCH';
 export const RECEIVE_SEARCHES = 'searches/RECEIVE_SEARCHES';
 export const REMOVE_SEARCH = 'searches/REMOVE_SEARCH';
 
-// export const GET_SEARCH_RESULTS = 'search/searchResults';
-// export const CLEAR_SEARCH_RESULTS = 'search/clearResults';
-
 
 const receiveSearch = search => ({
     type: RECEIVE_SEARCH,

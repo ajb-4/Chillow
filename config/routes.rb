@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     resources :homes, only: [:show, :index, :create, :update, :destroy]
     resources :searches, only: [:show, :index, :create, :update, :destroy]
     resources :likes, only: [:index, :create, :destroy]
+    get 'homes/search', to: 'homes#search'
   end
 
 

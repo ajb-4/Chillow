@@ -1,10 +1,14 @@
 #backgroundphoto-container {
     height: 408px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #background-image {
-    position: relative;
+    position: absolute;
     object-fit: cover;
     height: 408px;
     width: 100%;
@@ -12,23 +16,44 @@
 }
 
 #mainpage-slogan {
-    position: absolute;
     color: white;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
     font-size: 40px;
 }
 
 #mainpage-searchbar-container {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(41, 41, 229, 0);
+    background-color: white;
 }
 
-#mainpage-searchbar {
-    background-color: rgb(148, 227, 199);
+#mainpage-searchbar-container:hover {
+    border: 1px solid rgb(41, 41, 229);
 }
+
+#searchinput-mainpage {
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 40px;
+    border: none;
+}
+
+#searchinput-mainpage:hover {
+    
+}
+
+#mainpage-searchbar-container i {
+    color: rgb(0, 106, 255);
+    font-size: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#mainpage-searchbar-container i:hover {
+    cursor: pointer;
+}
+
 

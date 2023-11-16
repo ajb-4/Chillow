@@ -4,13 +4,15 @@ import session from './session';
 import homes from './homes';
 import search from './search';
 import likes from './likes';
+import filter from './filter';
 
 
 const rootReducer = combineReducers({
   session,
   homes,
   search,
-  likes
+  likes,
+  filter
 })
 
 let enhancer;

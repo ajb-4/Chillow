@@ -1,6 +1,7 @@
 import './CreateSearch.css';
 import { useState } from 'react';
 import * as searchActions from '../../store/search';
+import * as filterActions from '../../store/filter';
 import { useDispatch, useSelector } from 'react-redux';
 import SearchBar from '../SearchBar';
 
@@ -27,6 +28,25 @@ const CreateSearch = () => {
         searchText(query);
         if (query.trim != "") {
         }
+    }
+
+    const handleSearch = async (e) => {
+        e.preventDefault();
+        debugger
+        return dispatch(filterActions.fetchFilterResults({ priceMin,
+            priceMax,
+            beds,
+            baths,
+            homeType
+            }))
+        .catch(async (res) => {
+        let data;
+        try {
+          data = await res.clone().json();
+        } catch {
+          data = await res.text();
+        }
+        })
     }
 
     const handleSubmit = async (e) => {
@@ -107,7 +127,9 @@ const CreateSearch = () => {
                 {sessionUser && <div id='savesearch-buttoncontainer'>
                     <input type='submit' id='savesearch-button' value='Save search'></input>
                 </div>}
-               
+                <div id='createsearch-searchbuttoncontainer' onClick={handleSearch}>
+                    <input type='button' id='createsearch-button' value='Search'></input>
+                </div>
             </div> 
             </form>   
 

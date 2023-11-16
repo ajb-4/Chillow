@@ -1,6 +1,6 @@
 class Api::HomesController < ApplicationController
 
-    wrap_parameters include: Home.attribute_names
+    wrap_parameters include: Home.attribute_names + ['priceMin', 'priceMax', 'homeType']
     
     def create
       @home = Home.new(home_params)
@@ -35,6 +35,20 @@ class Api::HomesController < ApplicationController
       @home = Home.find(params(:id))
       @home.destroy
       render json: {message: 'Home has been delisted.'}
+    end
+
+    def search
+
+      query = {}
+
+      query[:bathrooms] = params[:baths].to_f..Float::INFINITY if params[:baths].present?
+      query[:bedrooms] = params[:beds].to_i..Float::INFINITY if params[:beds].present?
+      query[:price] = params[:price_min].to_i..params[:price_max].to_i if params[:price_min].present? && params[:price_max].present?
+
+      @homes = Home.where(query)
+
+      render :search
+
     end
 
     private

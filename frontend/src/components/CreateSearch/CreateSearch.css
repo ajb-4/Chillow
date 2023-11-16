@@ -71,6 +71,10 @@
     width: 200px;
 }
 
+#createsearch-button:hover {
+    cursor: pointer;
+}
+
 
 
 

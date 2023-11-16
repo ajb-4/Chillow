@@ -1,4 +1,3 @@
-
 import csrfFetch from "./csrf";
 
 export const RECEIVE_HOME = 'homes/receiveHome';
