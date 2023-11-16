@@ -28,6 +28,7 @@ export const getLikes = state => {
 }
 
 export const createLike = like => async dispatch => {
+    debugger
     try {
         const response = await csrfFetch('/api/likes', {
             method: 'POST',

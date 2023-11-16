@@ -7,6 +7,7 @@ import thumbnailphoto3 from '../../assets/images/ChillowImage6.jpeg'
 import thumbnailphoto4 from '../../assets/images/ChillowImage7.jpeg'
 import thumbnailphoto5 from '../../assets/images/ChillowImage8.jpeg'
 import logo from '../../assets/images/ChillowFontLogo.png'
+import { createLike, deleteLike } from "../../store/likes";
 
 
 const HomeShow = ({homeId}) => {
@@ -14,6 +15,9 @@ const HomeShow = ({homeId}) => {
     const home = useSelector(getHome(homeId));
     const [overviewTab, setOverviewTab] = useState(true);
     const [isExpanded, setIsExpanded] = useState(false);
+    const [homeLiked, setHomeLiked] = useState();
+    const sessionUser = useSelector(state => state.session.user);
+    const likes = useSelector(state => state.likes);
     
     
     useEffect(() => {
@@ -22,9 +26,45 @@ const HomeShow = ({homeId}) => {
         }
     }, [dispatch, homeId])
 
+    useEffect(() => {
+        const likesArray = Object.values(likes);
+        if (likesArray.length > 0) {
+            const hasLiked = likesArray.some(
+                (like) => like.likerId === sessionUser.id && like.homeId === home.id
+            );
+            setHomeLiked(hasLiked);
+        }
+    }, [likes, home, sessionUser.id, dispatch]);
+
     let zestimate = '';
     let monthlyCost = '';
     let ppsf = '';
+
+    const handleLike = () => {
+
+        if (!sessionUser.id) {
+            return;
+        }
+        const likesArray = Object.values(likes);
+ 
+        if (!homeLiked) {
+            setHomeLiked(true)
+            dispatch(createLike({
+                likerId: sessionUser.id,
+                homeId: home.id
+            }))
+        } else {
+            setHomeLiked(false);
+
+            const likeId = likesArray.find(
+                (like) => like.likerId === sessionUser.id && like.homeId === home.id
+            )?.id;
+
+            if (likeId) {
+                dispatch(deleteLike(likeId));
+            }
+        }
+    }
 
     if (!home) {
         return null;
@@ -41,6 +81,13 @@ const HomeShow = ({homeId}) => {
 
     const toggleExpand = () => {
         setIsExpanded(!isExpanded);
+    }
+
+    let heartIcon; 
+    if (!homeLiked) {
+        heartIcon = (<i class="fa-sharp fa-light fa-heart"></i>)
+    } else {
+        heartIcon = (<i class="fa-sharp fa-solid fa-heart"></i>)
     }
 
     return (
@@ -65,7 +112,10 @@ const HomeShow = ({homeId}) => {
                     <div id='homeshow-headingtab'>
                         <img src={logo} alt="logo" id='homeshow-logo'></img>
                         <div id='homeshow-headerlink'>
-                          <div id='homeshowheader-savehome'>Save</div>
+                          <div id='homeshowheader-savehome' onClick={handleLike}>
+                            {heartIcon}
+                            <div>Save</div>
+                          </div>
                           <div id='homeshowheader-sharehome'>Share</div> 
                         </div>
                     </div>

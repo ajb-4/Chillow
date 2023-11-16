@@ -52,6 +52,24 @@
     font-size: 16px;
 }
 
+#homeshowheader-savehome {
+    display: flex;
+}
+
+#homeshowheader-savehome:hover {
+    cursor: pointer;
+}
+
+#homeshowheader-savehome i {
+    margin-right: 8px;
+    margin-top: 2px;
+    font-size: 18px;
+}
+
+#homeshowheader-savehome div:hover {
+    text-decoration: underline;
+}
+
 #homeshow-detailscontainer-belowheader {
     padding: 15px;
 }
