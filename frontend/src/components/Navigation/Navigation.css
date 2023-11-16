@@ -1,21 +1,25 @@
-.navbar-elements {
-    border-bottom: 1.5px solid lightgrey;
-    z-index: 5;
-    width: 100%;
+#navbar-elements {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    z-index: 5;
     height: 71.5px;
+    width: 1200px;
+    /* border: 1px solid green; */
+}
+
+#navbar-elements > div {
+    /* border: 1px solid green; */
 }
 
 #zillowhomebutton {
     color: #1277e1;
-    margin-left: 25%;
     transform: scale(.20);
-    margin-bottom: 3%;
+    width: 400px;
+    margin-right: 400px;
 }
 
-.signin-button {
-    margin-right: 2%;
+#signin-button {
     border: none;
     background-color: white;
     font-size: 16px;
@@ -29,22 +33,41 @@
     justify-content: center;
 }
 
+#navbar-sessionlink:hover {
+    cursor: pointer;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1.5px solid lightgrey;
 }
 
 #profiledropdownbutton {
     border: none;
     background-color: white;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-right: 40px;
+    font-size: 24px;
     font-weight: 10;
     color: rgb(52, 48, 48);
     font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
 }
 
+
+#navbar-leftside {
+    display: flex;
+    font-size: 16px;
+    font-weight: 10;
+    color: rgb(52, 48, 48);
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+}
+
+#navbar-leftside > div {
+    margin-right: 25px;
+}
+
+#navbar-leftside > div:hover {
+    color: rgb(0, 106, 255);
+}
 
 

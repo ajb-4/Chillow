@@ -20,7 +20,7 @@ const Navigation = () => {
     } else {
         sessionLink = ( 
             <>
-                <button className="signin-button" onClick={() => setIsOpen2(true)}>Sign In</button>
+                <button id="signin-button" onClick={() => setIsOpen2(true)}>Sign In</button>
             </>     
         )
     }
@@ -28,9 +28,13 @@ const Navigation = () => {
     return (
         <>
         <div className="navbar">
-            <div className="navbar-elements">
+            <div id="navbar-elements">
+                <div id='navbar-leftside'>
+                    <div id='nav-savedhomes'><Link to={`/favorites`} className="no-link-underline" id='nav-savedhomelink'>Saved homes</Link></div>
+                    <div id='nav-savedsearches'><Link to={`/searches`} className="no-link-underline" id='nav-savedsearchlink'>Saved searches</Link></div>
+                </div>
                 <div id="zillowhomebutton"><Link to="/"><img src={logo} alt="logo"></img></Link></div>
-                {sessionLink}
+                <div id='navbar-sessionlink'>{sessionLink}</div>
             </div>
             <div id="signin-up-profilebutton">      
                 <Modal open={isOpen2} onClose={() => setIsOpen2(false)} modalStyle='userAuthModalStyle'>
