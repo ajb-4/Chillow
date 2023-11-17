@@ -1,63 +1,28 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
 require 'open-uri'
 require 'faker'
 
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-ApplicationRecord.transaction do 
-    puts "Destroying tables..."
-    # Unnecessary if using `rails db:seed:replant`
-    Home.destroy_all
-    Search.destroy_all
-    User.destroy_all
-   
-  
-    puts "Resetting primary keys..."
-    # For easy testing, so that after seeding, the first `User` has `id` of 1
-    ApplicationRecord.connection.reset_pk_sequence!('users')
-    ApplicationRecord.connection.reset_pk_sequence!('homes')
-    ApplicationRecord.connection.reset_pk_sequence!('searches')
-  
-    puts "Creating users..."
-    # Create one user with an easy to remember username, email, and password:
-    
-end
+puts "Destroying tables..."
+Home.destroy_all
+Search.destroy_all
+User.destroy_all
 
-User.create!(
-    username: 'DemoUser',
-    email: 'demo@gmail.com',
-    password: 'Password$1'
-)
+puts "Resetting primary keys..."
+ApplicationRecord.connection.reset_pk_sequence!('users')
+ApplicationRecord.connection.reset_pk_sequence!('homes')
+ApplicationRecord.connection.reset_pk_sequence!('searches')
 
-User.create!(
-  username: 'DemoAlex', 
-  email: 'demo@user.io', 
-  password: 'Alex$Password7'
-)
+puts "Creating users..."
+User.create!(username: 'DemoUser', email: 'demo@gmail.com', password: 'Password$1')
+User.create!(username: 'DemoAlex', email: 'demo@user.io', password: 'Alex$Password7')
+User.create!(username: 'DemoAlex2', email: 'demo2@user.io', password: 'Alex$Password7')
 
-User.create!(
-  username: 'DemoAlex2', 
-  email: 'demo2@user.io', 
-  password: 'Alex$Password7'
-)
-
+puts "Creating homes..."
 Home.create!(
   address: '35 Bayberry Lane',
   city: 'Hanover',
   state: 'MA',
-  zipcode: '02337',  
-  price: 777777, 
+  zipcode: '02337',
+  price: 777777,
   bedrooms: 3,
   bathrooms: 2.5,
   square_feet: 3456,
@@ -65,7 +30,7 @@ Home.create!(
   built_date: 1997,
   property_type: 'single-family',
   seller_id: 1,
-  description: "Gray house on the corner."
+  description: 'Gray house on the corner.'
 )
 
 Home.create!(
@@ -182,40 +147,31 @@ Home.create!(
   description: "Gray house on the corner."
 )
 
+puts "Creating searches..."
 10.times do
-  Search.create!({
+  Search.create!(
     price_min: Faker::Number.between(from: 100000, to: 2000000),
     price_max: Faker::Number.between(from: 500000, to: 10000000),
     beds: Faker::Number.between(from: 1, to: 5),
     baths: Faker::Number.between(from: 1, to: 5),
     home_type: 'Condominium',
-    searcher: User.first 
-  })
+    searcher: User.first
+  )
 end
 
-i = 0
+puts "Attaching photos to homes..."
 arr_homes = Home.first(8)
 
-  while i <= 7 do
+i = 0
+while i <= 7 do
   arr_homes[i].photos.attach(
-
-    io: URI.open("https://chillow-seeds.s3.amazonaws.com/Chillowimage#{i + 1}.jpeg"), 
+    io: URI.open("https://chillow-seeds.s3.amazonaws.com/Chillowimage#{i + 1}.jpeg"),
     filename: "Chillowimage#{i + 1}.jpeg"
   )
-  # arr_homes[i].photos.attach(
 
-  #   io: URI.open("https://chillow-seeds.s3.amazonaws.com/Chillowimage#{i + 9}.jpeg"), 
-  #   filename: "Chillowimage#{i + 9}.jpeg"
-  # )
-  # arr_homes[i].photos.attach(
-  
-  #   io: URI.open("https://chillow-seeds.s3.amazonaws.com/Chillowimage#{i + 17}.jpeg"), 
-  #   filename: "Chillowimage#{i + 17}.jpeg"
-  # )
+  # Attach other photos if needed...
 
   i += 1
+end
 
-  end
-  
-
-  puts "Done!"
+puts "Done!"
