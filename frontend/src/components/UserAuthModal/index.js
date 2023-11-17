@@ -4,7 +4,7 @@ import { useState } from "react"
 import "./UserAuthModal.css"
 
 const UserAuthModal = ({onClose}) => {
-    console.log("userauth opened")
+
     const [signInTab, setSignInTab] = useState(true);
     let renderedForm;
 

@@ -32,7 +32,7 @@ const CreateSearch = () => {
 
     const handleSearch = async (e) => {
         e.preventDefault();
-        debugger
+ 
         return dispatch(filterActions.fetchFilterResults({ priceMin,
             priceMax,
             beds,

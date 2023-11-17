@@ -61,7 +61,7 @@ const EditSearch = ({searchId}) => {
     // if (!search) {
     //     return null
     // }
-   console.log(errors)
+   
 
     return (
         <>

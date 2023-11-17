@@ -50,7 +50,9 @@ const HomeIndexItem = ({home}) => {
         }
     }
 
-    const handleLike = () => {
+    const handleLike = (e) => {
+
+        e.stopPropagation();
 
         if (!sessionUser.id) {
             return;

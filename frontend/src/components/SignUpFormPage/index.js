@@ -37,7 +37,7 @@ const SignUpFormPage = () => {
     const hasNumber = new RegExp('(?=.*[0-9])')
     const hasLetter = new RegExp('(?=.*[A-Z])|(?=.*[a-z])')
 
-    console.log(errors)
+
     
     return (
       <>

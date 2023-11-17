@@ -17,7 +17,7 @@ export const getFilters = state => {
 }
 
 export const fetchFilterResults = query => async dispatch => {
-    debugger
+
     const response = await csrfFetch(`/api/homes/search?query=${query}`)
 
     if (response.ok) {

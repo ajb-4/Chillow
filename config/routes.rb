@@ -15,8 +15,7 @@ Rails.application.routes.draw do
     get 'homes/search', to: 'homes#search'
   end
 
-
-get '*path', to: "static_pages#frontend_index"
+  get '*path', to: "static_pages#frontend_index"
 
 end
 
