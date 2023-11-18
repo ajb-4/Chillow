@@ -32,6 +32,22 @@ const handleSubmit = (e) => {
         else setErrors([res.statusText]);
       });
 }
+
+const handleDemoLogin = () => {
+  setErrors([]);
+  return dispatch(sessionActions.loginUser({ email: 'demo@gmail.com', password: 'Password$1' }))
+    .catch(async (res) => {
+      let data;
+      try {
+        data = await res.clone().json();
+      } catch {
+        data = await res.text();
+      }
+      if (data?.errors) setErrors("Incorrect email or password. Please try again or click 'Forgot your password?'.");
+      else if (data) setErrors([data]);
+      else setErrors([res.statusText]);
+    });
+}
     return (
         <form onSubmit={handleSubmit} className="signInFormContainer">          
             <ul>
@@ -64,7 +80,7 @@ const handleSubmit = (e) => {
               <input type='submit' value='Sign in' id='signInButton'></input>
             </div>
             <div id="demouserlogincontainer">
-              <div id='demouserlogin'>Demo User</div>
+              <div id='demouserlogin' onClick={handleDemoLogin}>Demo User</div>
             </div>
             <div id="errors">
                 <p id="errormessage">{errors}</p>
