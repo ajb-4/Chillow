@@ -12,6 +12,7 @@ const [password, setPassword] = useState('');
 const [errors, setErrors] = useState([]);
 const dispatch = useDispatch();
 const sessionUser = useSelector(state => state.session.user);
+//test commit
 
 
 if (sessionUser) return <Redirect to="/" />;
