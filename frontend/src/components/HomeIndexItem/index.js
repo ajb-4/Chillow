@@ -2,10 +2,6 @@ import { Link, Route, useHistory} from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './HomeIndexItem.css'
-import thumbnailphoto2 from '../../assets/images/Chillowimage5.jpeg'
-import thumbnailphoto3 from '../../assets/images/ChillowImage6.jpeg'
-import thumbnailphoto4 from '../../assets/images/ChillowImage7.jpeg'
-import thumbnailphoto5 from '../../assets/images/ChillowImage8.jpeg'
 import { useDispatch, useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
 import { createLike, deleteLike } from '../../store/likes';
@@ -90,18 +86,6 @@ const HomeIndexItem = ({home}) => {
                         {images.map((photo, index) => (
                             <img key={index} src={photo} alt={`Photo ${index}`} id='thumbnailphoto'/>
                         ))}
-                        <img src={thumbnailphoto2} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto3} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto4} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto5} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto2} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto3} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto4} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto5} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto2} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto3} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto4} alt='mainpagehouse' id="thumbnailphoto"></img>
-                        <img src={thumbnailphoto5} alt='mainpagehouse' id="thumbnailphoto"></img>
                     </Carousel>
                 </div>
                 <div id='homeindexitem-heart' onClick={handleLike}>

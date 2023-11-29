@@ -2,10 +2,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchHome, getHome} from "../../store/homes";
 import { useEffect, useState} from "react";
 import './HomeShow.css'
-import thumbnailphoto2 from '../../assets/images/Chillowimage5.jpeg'
-import thumbnailphoto3 from '../../assets/images/ChillowImage6.jpeg'
-import thumbnailphoto4 from '../../assets/images/ChillowImage7.jpeg'
-import thumbnailphoto5 from '../../assets/images/ChillowImage8.jpeg'
 import logo from '../../assets/images/ChillowFontLogo.png'
 import { createLike, deleteLike } from "../../store/likes";
 
@@ -66,9 +62,11 @@ const HomeShow = ({homeId}) => {
         }
     }
 
-    if (!home) {
+    if (!home || !home.photoArray) {
         return null;
     }
+
+    const images = home.photoArray;
     
     if (!home.price) {
         return null
@@ -94,18 +92,9 @@ const HomeShow = ({homeId}) => {
         <>
             <div id='homeshow-outtercontainer'>
                 <div id='homeshow-imagecontainer'>
-                    <img src={thumbnailphoto2} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto3} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto4} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto5} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto2} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto3} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto4} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto5} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto2} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto3} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto4} alt='mainpagehouse' id="homeshow-image"></img>
-                    <img src={thumbnailphoto5} alt='mainpagehouse' id="homeshow-image"></img>
+                    {images.map((photo, index) => (
+                            <img key={index} src={photo} alt={`Photo ${index}`} id='homeshow-image'/>
+                    ))}
                 </div>
 
                 <div id='homeshow-detailscontainer'>
