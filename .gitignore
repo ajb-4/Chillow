@@ -33,4 +33,5 @@
 
 /.history
 
-/log
+log
+log/development.log
