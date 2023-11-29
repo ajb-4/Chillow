@@ -30,7 +30,9 @@ Home.create!(
   built_date: 1997,
   property_type: 'single-family',
   seller_id: 1,
-  description: 'Gray house on the corner.'
+  description: 'Gray house on the corner.',
+  latitude: 47.6062,
+  longitude: -122.3321
 )
 
 Home.create!(
@@ -46,7 +48,9 @@ Home.create!(
   built_date: 1937,
   property_type: 'single-family',
   seller_id: 2,
-  description: "Gray house on the corner."
+  description: "Gray house on the corner.",
+  latitude: 37.7749,
+  longitude: -122.4194
 )
 
 
@@ -63,7 +67,9 @@ Home.create!(
   built_date: 1937,
   property_type: 'single-family',
   seller_id: 1,
-  description: "Gray house on the corner."
+  description: "Gray house on the corner.",
+  latitude: 39.7392,
+  longitude: -104.9903
 )
 
 Home.create!(
@@ -79,7 +85,9 @@ Home.create!(
   built_date: 1937,
   property_type: 'Duplex',
   seller_id: 1,
-  description: "Gray house on the corner."
+  description: "Gray house on the corner.",
+  latitude: 30.2500,
+  longitude: -97.7500
 )
 
 Home.create!(
@@ -95,7 +103,9 @@ Home.create!(
   built_date: 1837,
   property_type: 'condominium',
   seller_id: 2,
-  description: "Near coffee shop."
+  description: "Near coffee shop.",
+  latitude: 41.8781,
+  longitude: -87.6298
 )
 
 Home.create!(
@@ -111,7 +121,9 @@ Home.create!(
   built_date: 1937,
   property_type: 'single-family',
   seller_id: 1,
-  description: "Gray house on the corner."
+  description: "Gray house on the corner.",
+  latitude: 40.7128,
+  longitude: -74.0060
 )
 
 
@@ -128,7 +140,9 @@ Home.create!(
   built_date: 1937,
   property_type: 'Duplex',
   seller_id: 1,
-  description: "Gray house on the corner."
+  description: "Gray house on the corner.",
+  latitude: 25.7617,
+  longitude: -80.1918
 )
 
 Home.create!(
@@ -144,7 +158,9 @@ Home.create!(
   built_date: 1937,
   property_type: 'Condominium',
   seller_id: 1,
-  description: "Gray house on the corner."
+  description: "Gray house on the corner.",
+  latitude: 45.5051,
+  longitude: -122.6750
 )
 
 puts "Creating searches..."
