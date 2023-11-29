@@ -54,7 +54,7 @@ class Api::HomesController < ApplicationController
     private
 
     def home_params
-      params.require(:home).permit(:address, :city, :state, :zipcode, :price, :bedrooms, :bathrooms, :square_feet, :lot_size, :built_date, :property_type, :unit_number, :description, :seller_id)
+      params.require(:home).permit(:address, :city, :state, :zipcode, :price, :bedrooms, :bathrooms, :square_feet, :lot_size, :built_date, :property_type, :unit_number, :description, :latitude, :longitude, :seller_id)
     end
 
 end

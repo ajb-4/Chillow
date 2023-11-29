@@ -1,5 +1,5 @@
 json.home do
-  json.extract! @home, :id, :address, :city, :state, :zipcode, :price, :bedrooms, :bathrooms, :square_feet, :lot_size, :built_date, :property_type, :seller_id, :unit_number, :description, :created_at
+  json.extract! @home, :id, :address, :city, :state, :zipcode, :price, :bedrooms, :bathrooms, :square_feet, :lot_size, :built_date, :property_type, :seller_id, :unit_number, :description, :created_at, :longitude, :latitude
 
   photoArr = []
   if @home.photos.attached?
