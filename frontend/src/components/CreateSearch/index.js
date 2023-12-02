@@ -20,8 +20,7 @@ const CreateSearch = () => {
     const sessionUser = useSelector(state => state.session.user);
     
 
-    // const [priceDropDown, setDropdownVisible] = useState(false);
-
+// testing
 
     function handleChange(e) {
         const query = e.target.value;
