@@ -20,7 +20,7 @@ const CreateSearch = () => {
     const sessionUser = useSelector(state => state.session.user);
     
 
-// testing
+// testing commit
 
     function handleChange(e) {
         const query = e.target.value;
