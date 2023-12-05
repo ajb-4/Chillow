@@ -38,18 +38,20 @@ class Api::HomesController < ApplicationController
     end
 
     def search
-
+      query_string = params[:query]
+      query_hash = JSON.parse(query_string) if query_string.present?
+    
       query = {}
+    
+      query[:bathrooms] = query_hash['baths'].to_f..Float::INFINITY if query_hash['baths'].present?
+      query[:bedrooms] = query_hash['beds'].to_i..Float::INFINITY if query_hash['beds'].present?
+      query[:price] = query_hash['priceMin'].to_i..query_hash['priceMax'].to_i if query_hash['priceMin'].present? && query_hash['priceMax'].present?
 
-      query[:bathrooms] = params[:baths].to_f..Float::INFINITY if params[:baths].present?
-      query[:bedrooms] = params[:beds].to_i..Float::INFINITY if params[:beds].present?
-      query[:price] = params[:price_min].to_i..params[:price_max].to_i if params[:price_min].present? && params[:price_max].present?
 
       @homes = Home.where(query)
-
+     
       render :search
-
-    end
+    end    
 
     private
 

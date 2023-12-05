@@ -17,8 +17,10 @@ export const getFilters = state => {
 }
 
 export const fetchFilterResults = query => async dispatch => {
-
-    const response = await csrfFetch(`/api/homes/search?query=${query}`)
+    
+    const queryString = encodeURIComponent(JSON.stringify(query));
+    debugger
+    const response = await csrfFetch(`/api/homes/search?query=${queryString}`)
 
     if (response.ok) {
         const homes = await response.json();

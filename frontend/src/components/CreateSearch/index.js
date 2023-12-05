@@ -22,12 +22,12 @@ const CreateSearch = () => {
 
 // testing commit
 
-    function handleChange(e) {
-        const query = e.target.value;
-        searchText(query);
-        if (query.trim != "") {
-        }
-    }
+    // function handleChange(e) {
+    //     const query = e.target.value;
+    //     searchText(query);
+    //     if (query.trim != "") {
+    //     }
+    // }
 
     const handleSearch = async (e) => {
         e.preventDefault();
@@ -86,7 +86,8 @@ const CreateSearch = () => {
                         id='searchinput'
                         placeholder="Find your home"
                         value={searchText}
-                        onChange={handleChange}>
+                        // onChange={handleChange}
+                        >
                     </input>
                 </div>
                 <div id='forsale-dropdown'>
