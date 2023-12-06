@@ -18,24 +18,34 @@ const ChillowMap = (props) => {
     }, [dispatch]) 
     // const [map, setMap] = useState(null);
     // const mapRef = useRef(null);
+    
 
     return (
         <>
             <div id='chillowmap-outtercontainer'>
-                        <Map
-                          google={props.google}
-                          zoom={4}
-                          initialCenter={{ lat: 40.73, lng: -73.99 }}
-                          style={{ width: '800px', height: '800px'}}
-                          center={{ lat: 40, lng: -102 }}
-                        >
-                            {filteredHomes.map((home) => (
-                                <Marker
-                                    key={home.id}
-                                    position={{ lat: home.latitude, lng: home.longitude }}
-                                />
-                            ))}
-                        </Map>
+                <Map
+                    google={props.google}
+                    zoom={4}
+                    initialCenter={{ lat: 40.73, lng: -73.99 }}
+                    style={{ width: '800px', height: '800px'}}
+                    center={{ lat: 40, lng: -102 }}
+                >
+                    {filteredHomes.length > 0 ? (
+                        filteredHomes.map((home) => (
+                            <Marker
+                                key={home.id}
+                                position={{ lat: home.latitude, lng: home.longitude }}
+                            />
+                        ))
+                    ) : (
+                        homes.map((home) => (
+                            <Marker
+                                key={home.id}
+                                position={{ lat: home.latitude, lng: home.longitude }}
+                            />
+                        ))
+                    )}
+                </Map>
             </div>
         </>
     )

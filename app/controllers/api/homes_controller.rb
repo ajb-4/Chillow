@@ -43,12 +43,29 @@ class Api::HomesController < ApplicationController
     
       query = {}
     
-      query[:bathrooms] = query_hash['baths'].to_f..Float::INFINITY if query_hash['baths'].present?
-      query[:bedrooms] = query_hash['beds'].to_i..Float::INFINITY if query_hash['beds'].present?
-      query[:price] = query_hash['priceMin'].to_i..query_hash['priceMax'].to_i if query_hash['priceMin'].present? && query_hash['priceMax'].present?
+      query[:bathrooms] = query_hash['baths'].to_f..Float::INFINITY if query_hash['baths'].length > 0
+      query[:bedrooms] = query_hash['beds'].to_i..Float::INFINITY if query_hash['beds'].length > 0
+      
+      if query_hash['priceMin'].length > 0 && query_hash['priceMax'].length > 0
+        query[:price] = query_hash['priceMin'].to_i..query_hash['priceMax'].to_i
+      elsif query_hash['priceMin'].length > 0
+        query[:price] = query_hash['priceMin'].to_i..Float::INFINITY
+      elsif query_hash['priceMax'].length > 0
+        query[:price] = 0..query_hash['priceMax'].to_i
+      end
+      
+      conditions = []
 
-
-      @homes = Home.where(query)
+      if query_hash['phrase'].length > 0
+        phrase = query_hash['phrase'].downcase
+        conditions << 'LOWER(address) LIKE :phrase OR LOWER(city) LIKE :phrase OR LOWER(state) LIKE :phrase OR LOWER(zipcode) LIKE :phrase'
+      end
+    
+      if conditions.length > 0
+        @homes = Home.where(conditions.join(' AND '), phrase: "%#{phrase}%").where(query)
+      else
+        @homes = Home.where(query)
+      end
      
       render :search
     end    

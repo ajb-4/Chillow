@@ -7,27 +7,17 @@ import SearchBar from '../SearchBar';
 
 const CreateSearch = () => {
 
-    const [priceMin, setPriceMin] = useState();
-    const [priceMax, setPriceMax] = useState();
-    const [beds, setBeds] = useState();
-    const [baths, setBaths] = useState();
-    const [homeType, setHomeType] = useState();
+    const [priceMin, setPriceMin] = useState("");
+    const [priceMax, setPriceMax] = useState("");
+    const [beds, setBeds] = useState("");
+    const [baths, setBaths] = useState("");
+    const [homeType, setHomeType] = useState("");
     const [errors, setErrors] = useState();
     const dispatch = useDispatch();
     const [searchText, setSearchText] = useState();
-    const [query, setQuery] = useState();
+    const [phrase, setPhrase] = useState("");
 
     const sessionUser = useSelector(state => state.session.user);
-    
-
-// testing commit
-
-    // function handleChange(e) {
-    //     const query = e.target.value;
-    //     searchText(query);
-    //     if (query.trim != "") {
-    //     }
-    // }
 
     const handleSearch = async (e) => {
         e.preventDefault();
@@ -36,7 +26,8 @@ const CreateSearch = () => {
             priceMax,
             beds,
             baths,
-            homeType
+            homeType,
+            phrase
             }))
         .catch(async (res) => {
         let data;
@@ -85,8 +76,8 @@ const CreateSearch = () => {
                         type='text'
                         id='searchinput'
                         placeholder="Find your home"
-                        value={searchText}
-                        // onChange={handleChange}
+                        value={phrase}
+                        onChange={(e) => setPhrase(e.target.value)}
                         >
                     </input>
                 </div>

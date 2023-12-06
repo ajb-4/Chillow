@@ -16,14 +16,27 @@ const PropertyHomeIndex = () => {
         dispatch(fetchLikes());
     }, [dispatch])
 
+    const index = (filteredHomes.length > 0 ? 
+        <>
+          {filteredHomes.map(home => 
+            <div className='listingthumbnail'>
+                <HomeIndexItem home={home}/>
+            </div>
+          )}
+        </> :
+        <>
+          {homes.map(home => 
+            <div className='listingthumbnail'>
+                <HomeIndexItem home={home}/>
+            </div>
+          )}
+        </>
+        )
+
     return (
         <>
                 <div id='prophomeindex-grid'>
-                    {filteredHomes.map(home => 
-                        <div className='listingthumbnail'>
-                            <HomeIndexItem home={home}/>
-                        </div>
-                    )}
+                    {index}
                 </div>
         </>
     )
