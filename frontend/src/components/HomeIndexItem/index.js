@@ -52,7 +52,7 @@ const HomeIndexItem = ({home}) => {
 
         e.stopPropagation();
 
-        if (!sessionUser.id) {
+        if (!sessionUser) {
             return;
         }
         const likesArray = Object.values(likes);

@@ -40,7 +40,7 @@ const HomeShow = ({homeId}) => {
 
     const handleLike = () => {
 
-        if (!sessionUser.id) {
+        if (!sessionUser) {
             return;
         }
         const likesArray = Object.values(likes);
