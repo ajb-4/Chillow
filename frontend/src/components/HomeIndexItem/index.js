@@ -24,12 +24,14 @@ const HomeIndexItem = ({home}) => {
     // }
 
     useEffect(() => {
-        const likesArray = Object.values(likes);
-        if (likesArray.length > 0) {
-            const hasLiked = likesArray.some(
-                (like) => like.likerId === sessionUser.id && like.homeId === home.id
-            );
-            setHomeLiked(hasLiked);
+        if (sessionUser) {
+            const likesArray = Object.values(likes);
+            if (likesArray.length > 0) {
+                const hasLiked = likesArray.some(
+                    (like) => like.likerId === sessionUser.id && like.homeId === home.id
+                );
+                setHomeLiked(hasLiked);
+            }
         }
     }, [likes, home.id, dispatch]);
     

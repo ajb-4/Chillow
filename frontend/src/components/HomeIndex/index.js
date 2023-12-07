@@ -13,6 +13,7 @@ import { fetchLikes } from "../../store/likes";
 const HomeIndex = () => {
     const dispatch = useDispatch();
     const homes = useSelector(getHomes);
+    const sessionUser = useSelector(state => state.session.user);
 
     const sliderSettings = {
         slidesToShow: 3.25,
@@ -21,7 +22,9 @@ const HomeIndex = () => {
     
     useEffect(() => {
         dispatch(fetchHomes());
-        dispatch(fetchLikes());
+        if (sessionUser) {
+            dispatch(fetchLikes());
+        }
     }, [dispatch])
 
     return (

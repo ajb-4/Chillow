@@ -10,10 +10,13 @@ const PropertyHomeIndex = () => {
     const dispatch = useDispatch();
     const homes = useSelector(getHomes);
     const filteredHomes = useSelector(getFilters);
+    const sessionUser = useSelector(state => state.session.user);
 
     useEffect(() => {
         dispatch(fetchHomes());
-        dispatch(fetchLikes());
+        if (sessionUser) {
+          dispatch(fetchLikes());
+        }
     }, [dispatch])
 
     const index = (filteredHomes.length > 0 ? 
