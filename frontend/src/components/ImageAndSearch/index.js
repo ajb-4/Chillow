@@ -1,19 +1,37 @@
 
 import './ImageAndSearch.css';
 import thumbnailphoto5 from '../../assets/images/ChillowImage6.jpeg'
-import SearchBar from '../SearchBar';
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import * as filterActions from '../../store/filter';
 
 const ImageAndSearch = () => {
 
-    const [searchText, setSearchText] = useState();
-    const [query, setQuery] = useState();
+    const [phrase, setPhrase] = useState("");
+    const history = useHistory();
+    const dispatch = useDispatch();
 
-    function handleChange(e) {
-        const query = e.target.value;
-        searchText(query);
-        if (query.trim != "") {
+    const handleSearch = async (e) => {
+        e.preventDefault();
+ 
+        dispatch(filterActions.fetchFilterResults({ 
+            priceMin: "",
+            priceMax: "",
+            beds: "",
+            baths: "",
+            homeType: "",
+            phrase
+            }))
+        .catch(async (res) => {
+        let data;
+        try {
+          data = await res.clone().json();
+        } catch {
+          data = await res.text();
         }
+        })
+        history.push(`/homes`)
     }
 
     return (
@@ -21,15 +39,14 @@ const ImageAndSearch = () => {
             <div id='backgroundphoto-container'>
                 <div id='mainpage-slogan'>Agents. Tours. Loans. Homes.</div>
                 <div id='mainpage-searchbar-container'>
-                    {/* <SearchBar/> */}
                     <input
                         type='text'
                         id='searchinput-mainpage'
                         placeholder="Find your home"
-                        value={searchText}
-                        onChange={handleChange}>
+                        value={phrase}
+                        onChange={(e) => setPhrase(e.target.value)}>
                     </input>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass" onClick={handleSearch}></i>
                 </div>
                 <img src={thumbnailphoto5} alt='mainpagehouse' id="background-image"></img>
             </div>        

@@ -22,7 +22,8 @@ const CreateSearch = () => {
     const handleSearch = async (e) => {
         e.preventDefault();
  
-        return dispatch(filterActions.fetchFilterResults({ priceMin,
+        return dispatch(filterActions.fetchFilterResults({ 
+            priceMin,
             priceMax,
             beds,
             baths,
