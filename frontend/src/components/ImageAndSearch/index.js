@@ -42,7 +42,7 @@ const ImageAndSearch = () => {
                     <input
                         type='text'
                         id='searchinput-mainpage'
-                        placeholder="Find your home"
+                        placeholder="Find homes by state, city, or zipcode"
                         value={phrase}
                         onChange={(e) => setPhrase(e.target.value)}>
                     </input>
