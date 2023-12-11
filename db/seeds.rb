@@ -54,23 +54,23 @@ Home.create!(
   longitude: -105.2705
 )
 
-Home.create!(
-  address: '79 Meadow Lane',
-  city: 'Bozeman',
-  state: 'MT',
-  zipcode: '59715',
-  price: 450000,
-  bedrooms: 3,
-  bathrooms: 2,
-  square_feet: 2400,
-  lot_size: 0.8,
-  built_date: 2012,
-  property_type: 'Dwelling',
-  seller_id: 1,
-  description: 'Discover modern living surrounded by Montanas natural beauty in this stunning dwelling on 79 Meadow Lane in Bozeman. With three bedrooms and two baths, this home offers contemporary design and spacious living. Built in 2012, the property is a harmonious blend of style and tranquility. Enjoy panoramic views of the mountains from the 0.8-acre lot, providing a peaceful retreat. The 2400 square feet of living space allows for comfortable and stylish living. Embrace the essence of Bozeman with this unique dwelling, where modern luxury meets the rugged allure of Montanas breathtaking landscapes.',
-  latitude: 45.6770,
-  longitude: -111.0429
-)
+# Home.create!(
+#   address: '79 Meadow Lane',
+#   city: 'Bozeman',
+#   state: 'MT',
+#   zipcode: '59715',
+#   price: 450000,
+#   bedrooms: 3,
+#   bathrooms: 2,
+#   square_feet: 2400,
+#   lot_size: 0.8,
+#   built_date: 2012,
+#   property_type: 'Dwelling',
+#   seller_id: 1,
+#   description: 'Discover modern living surrounded by Montanas natural beauty in this stunning dwelling on 79 Meadow Lane in Bozeman. With three bedrooms and two baths, this home offers contemporary design and spacious living. Built in 2012, the property is a harmonious blend of style and tranquility. Enjoy panoramic views of the mountains from the 0.8-acre lot, providing a peaceful retreat. The 2400 square feet of living space allows for comfortable and stylish living. Embrace the essence of Bozeman with this unique dwelling, where modern luxury meets the rugged allure of Montanas breathtaking landscapes.',
+#   latitude: 45.6770,
+#   longitude: -111.0429
+# )
 
 Home.create!(
   address: '234 Maple Avenue',
@@ -108,23 +108,23 @@ Home.create!(
   longitude: -85.6206
 )
 
-Home.create!(
-  address: '890 Evergreen Lane',
-  city: 'Bend',
-  state: 'OR',
-  zipcode: '97701',
-  price: 600000,
-  bedrooms: 3,
-  bathrooms: 2.5,
-  square_feet: 2400,
-  lot_size: 0.9,
-  built_date: 2010,
-  property_type: 'Dwelling',
-  seller_id: 1,
-  description: 'Discover the beauty of Central Oregon in this modern dwelling at 890 Evergreen Lane, Bend. With three bedrooms and two and a half baths, this home offers contemporary design surrounded by the stunning landscapes of Bend. Built in 2010, the property features sleek architecture and spacious living. The 2400 square feet of living space provides comfort and style. Enjoy the expansive 0.9-acre lot, creating a private and peaceful oasis. Whether youre an outdoor enthusiast or seeking a modern lifestyle, this dwelling in Bend offers the perfect blend of luxury and natural beauty.',
-  latitude: 44.0521,
-  longitude: -121.3153
-)
+# Home.create!(
+#   address: '890 Evergreen Lane',
+#   city: 'Bend',
+#   state: 'OR',
+#   zipcode: '97701',
+#   price: 600000,
+#   bedrooms: 3,
+#   bathrooms: 2.5,
+#   square_feet: 2400,
+#   lot_size: 0.9,
+#   built_date: 2010,
+#   property_type: 'Dwelling',
+#   seller_id: 1,
+#   description: 'Discover the beauty of Central Oregon in this modern dwelling at 890 Evergreen Lane, Bend. With three bedrooms and two and a half baths, this home offers contemporary design surrounded by the stunning landscapes of Bend. Built in 2010, the property features sleek architecture and spacious living. The 2400 square feet of living space provides comfort and style. Enjoy the expansive 0.9-acre lot, creating a private and peaceful oasis. Whether youre an outdoor enthusiast or seeking a modern lifestyle, this dwelling in Bend offers the perfect blend of luxury and natural beauty.',
+#   latitude: 44.0521,
+#   longitude: -121.3153
+# )
 
 Home.create!(
   address: '345 Summit Drive',
@@ -162,23 +162,23 @@ Home.create!(
   longitude: -96.7898
 )
 
-Home.create!(
-  address: '901 Redwood Lane',
-  city: 'Aspen',
-  state: 'CO',
-  zipcode: '81611',
-  price: 1200000,
-  bedrooms: 5,
-  bathrooms: 4.5,
-  square_feet: 4000,
-  lot_size: 1.5,
-  built_date: 2002,
-  property_type: 'Dwelling',
-  seller_id: 1,
-  description: 'Indulge in the luxury of Aspen, Colorado, with this exquisite dwelling at 901 Redwood Lane. Boasting five bedrooms and four and a half baths, this home offers sophistication and comfort in the heart of the Rockies. Built in 2002, the property features elegant design and panoramic mountain views. Imagine entertaining in the spacious living areas or relaxing in the private outdoor spaces. The 4000 square feet of living space provides ample room for both intimate gatherings and larger events. Experience the opulence of Aspen living in this stunning and meticulously crafted dwelling.',
-  latitude: 39.1911,
-  longitude: -106.8175
-)
+# Home.create!(
+#   address: '901 Redwood Lane',
+#   city: 'Aspen',
+#   state: 'CO',
+#   zipcode: '81611',
+#   price: 1200000,
+#   bedrooms: 5,
+#   bathrooms: 4.5,
+#   square_feet: 4000,
+#   lot_size: 1.5,
+#   built_date: 2002,
+#   property_type: 'Dwelling',
+#   seller_id: 1,
+#   description: 'Indulge in the luxury of Aspen, Colorado, with this exquisite dwelling at 901 Redwood Lane. Boasting five bedrooms and four and a half baths, this home offers sophistication and comfort in the heart of the Rockies. Built in 2002, the property features elegant design and panoramic mountain views. Imagine entertaining in the spacious living areas or relaxing in the private outdoor spaces. The 4000 square feet of living space provides ample room for both intimate gatherings and larger events. Experience the opulence of Aspen living in this stunning and meticulously crafted dwelling.',
+#   latitude: 39.1911,
+#   longitude: -106.8175
+# )
 
 Home.create!(
   address: '123 Evergreen Lane',
@@ -216,77 +216,77 @@ Home.create!(
   longitude: -112.0391
 )
 
-Home.create!(
-  address: '789 Cedar Lane',
-  city: 'Eugene',
-  state: 'OR',
-  zipcode: '97401',
-  price: 700000,
-  bedrooms: 4,
-  bathrooms: 3.5,
-  square_feet: 2800,
-  lot_size: 1.0,
-  built_date: 2008,
-  property_type: 'Dwelling',
-  seller_id: 1,
-  description: 'Discover the beauty of Eugene, Oregon, in this modern dwelling at 789 Cedar Lane. With four bedrooms and three and a half baths, this home offers contemporary design surrounded by the stunning landscapes of Eugene. Built in 2008, the property features sleek architecture and spacious living. The 2800 square feet of living space provides comfort and style. Enjoy the expansive 1.0-acre lot, creating a private and peaceful oasis. Whether youre an outdoor enthusiast or seeking a modern lifestyle, this dwelling in Eugene offers the perfect blend of luxury and natural beauty.',
-  latitude: 44.0521,
-  longitude: -123.0868
-)
+# Home.create!(
+#   address: '789 Cedar Lane',
+#   city: 'Eugene',
+#   state: 'OR',
+#   zipcode: '97401',
+#   price: 700000,
+#   bedrooms: 4,
+#   bathrooms: 3.5,
+#   square_feet: 2800,
+#   lot_size: 1.0,
+#   built_date: 2008,
+#   property_type: 'Dwelling',
+#   seller_id: 1,
+#   description: 'Discover the beauty of Eugene, Oregon, in this modern dwelling at 789 Cedar Lane. With four bedrooms and three and a half baths, this home offers contemporary design surrounded by the stunning landscapes of Eugene. Built in 2008, the property features sleek architecture and spacious living. The 2800 square feet of living space provides comfort and style. Enjoy the expansive 1.0-acre lot, creating a private and peaceful oasis. Whether youre an outdoor enthusiast or seeking a modern lifestyle, this dwelling in Eugene offers the perfect blend of luxury and natural beauty.',
+#   latitude: 44.0521,
+#   longitude: -123.0868
+# )
 
-Home.create!(
-  address: '234 Redwood Lane',
-  city: 'Anchorage',
-  state: 'AK',
-  zipcode: '99501',
-  price: 750000,
-  bedrooms: 3,
-  bathrooms: 2.5,
-  square_feet: 2300,
-  lot_size: 0.8,
-  built_date: 2016,
-  property_type: 'Single-Family',
-  seller_id: 1,
-  description: 'Experience the unique beauty of Anchorage, Alaska, in this contemporary single-family home at 234 Redwood Lane. Offering three bedrooms and two and a half baths, this residence provides modern luxury within a stunning natural setting. Built in 2016, the property features sleek design and spacious living areas. Imagine enjoying the Northern Lights from your own backyard or exploring the nearby wilderness. The 2300 square feet of living space offers both comfort and style. Make Anchorage your home and embrace the unparalleled landscapes and outdoor adventures.',
-  latitude: 61.0160,
-  longitude: -149.7375
-)
+# Home.create!(
+#   address: '234 Redwood Lane',
+#   city: 'Anchorage',
+#   state: 'AK',
+#   zipcode: '99501',
+#   price: 750000,
+#   bedrooms: 3,
+#   bathrooms: 2.5,
+#   square_feet: 2300,
+#   lot_size: 0.8,
+#   built_date: 2016,
+#   property_type: 'Single-Family',
+#   seller_id: 1,
+#   description: 'Experience the unique beauty of Anchorage, Alaska, in this contemporary single-family home at 234 Redwood Lane. Offering three bedrooms and two and a half baths, this residence provides modern luxury within a stunning natural setting. Built in 2016, the property features sleek design and spacious living areas. Imagine enjoying the Northern Lights from your own backyard or exploring the nearby wilderness. The 2300 square feet of living space offers both comfort and style. Make Anchorage your home and embrace the unparalleled landscapes and outdoor adventures.',
+#   latitude: 61.0160,
+#   longitude: -149.7375
+# )
 
-Home.create!(
-  address: '567 Cedarwood Avenue',
-  city: 'Bozeman',
-  state: 'MT',
-  zipcode: '59718',
-  price: 600000,
-  bedrooms: 4,
-  bathrooms: 3,
-  square_feet: 2600,
-  lot_size: 1.0,
-  built_date: 2012,
-  property_type: 'Cabin',
-  seller_id: 1,
-  description: 'Escape to the picturesque beauty of Bozeman, Montana, with this charming cabin at 567 Cedarwood Avenue. Offering four bedrooms and three baths, this cabin is a haven for all seasons. Nestled on a 1.0-acre lot and built in 2012, the property combines rustic charm with modern conveniences. Imagine cozying up by the fireplace in the winter or enjoying the expansive deck in the summer. The 2600 square feet of living space provides ample room for relaxation and entertaining. Experience the enchantment of Bozeman in this welcoming and idyllic cabin.',
-  latitude: 45.6676,
-  longitude: -111.0489
-)
+# Home.create!(
+#   address: '567 Cedarwood Avenue',
+#   city: 'Bozeman',
+#   state: 'MT',
+#   zipcode: '59718',
+#   price: 600000,
+#   bedrooms: 4,
+#   bathrooms: 3,
+#   square_feet: 2600,
+#   lot_size: 1.0,
+#   built_date: 2012,
+#   property_type: 'Cabin',
+#   seller_id: 1,
+#   description: 'Escape to the picturesque beauty of Bozeman, Montana, with this charming cabin at 567 Cedarwood Avenue. Offering four bedrooms and three baths, this cabin is a haven for all seasons. Nestled on a 1.0-acre lot and built in 2012, the property combines rustic charm with modern conveniences. Imagine cozying up by the fireplace in the winter or enjoying the expansive deck in the summer. The 2600 square feet of living space provides ample room for relaxation and entertaining. Experience the enchantment of Bozeman in this welcoming and idyllic cabin.',
+#   latitude: 45.6676,
+#   longitude: -111.0489
+# )
 
-Home.create!(
-  address: '890 Juniper Lane',
-  city: 'Aspen',
-  state: 'CO',
-  zipcode: '81612',
-  price: 1400000,
-  bedrooms: 5,
-  bathrooms: 4.5,
-  square_feet: 4200,
-  lot_size: 1.2,
-  built_date: 2003,
-  property_type: 'Dwelling',
-  seller_id: 1,
-  description: 'Indulge in the luxurious lifestyle of Aspen, Colorado, with this exquisite dwelling at 890 Juniper Lane. Boasting five bedrooms and four and a half baths, this home offers sophistication and comfort in the heart of the Rockies. Built in 2003, the property features elegant design and breathtaking mountain views. Imagine entertaining in the spacious living areas or relaxing in the private outdoor spaces. The 4200 square feet of living space provides ample room for both intimate gatherings and larger events. Experience the opulence of Aspen living in this stunning and meticulously crafted dwelling.',
-  latitude: 39.1840,
-  longitude: -106.8210
-)
+# Home.create!(
+#   address: '890 Juniper Lane',
+#   city: 'Aspen',
+#   state: 'CO',
+#   zipcode: '81612',
+#   price: 1400000,
+#   bedrooms: 5,
+#   bathrooms: 4.5,
+#   square_feet: 4200,
+#   lot_size: 1.2,
+#   built_date: 2003,
+#   property_type: 'Dwelling',
+#   seller_id: 1,
+#   description: 'Indulge in the luxurious lifestyle of Aspen, Colorado, with this exquisite dwelling at 890 Juniper Lane. Boasting five bedrooms and four and a half baths, this home offers sophistication and comfort in the heart of the Rockies. Built in 2003, the property features elegant design and breathtaking mountain views. Imagine entertaining in the spacious living areas or relaxing in the private outdoor spaces. The 4200 square feet of living space provides ample room for both intimate gatherings and larger events. Experience the opulence of Aspen living in this stunning and meticulously crafted dwelling.',
+#   latitude: 39.1840,
+#   longitude: -106.8210
+# )
 
 Home.create!(
   address: '123 Birch Street',
@@ -306,41 +306,41 @@ Home.create!(
   longitude: -114.3376
 )
 
-Home.create!(
-  address: '456 Pinecrest Lane',
-  city: 'Bend',
-  state: 'OR',
-  zipcode: '97703',
-  price: 620000,
-  bedrooms: 4,
-  bathrooms: 3,
-  square_feet: 2600,
-  lot_size: 0.8,
-  built_date: 2013,
-  property_type: 'Cabin',
-  seller_id: 1,
-  description: 'Escape to the serene beauty of Bend, Oregon, with this charming cabin at 456 Pinecrest Lane. Offering four bedrooms and three baths, this cabin is a retreat for all seasons. Nestled on a 0.8-acre lot and built in 2013, the property combines rustic charm with modern comfort. Imagine enjoying the mountain views from the cozy living room or relaxing on the spacious deck. The 2600 square feet of living space provides ample room for relaxation and entertaining. Experience the magic of Bend in this inviting and idyllic cabin.',
-  latitude: 44.0719,
-  longitude: -121.3153
-)
+# Home.create!(
+#   address: '456 Pinecrest Lane',
+#   city: 'Bend',
+#   state: 'OR',
+#   zipcode: '97703',
+#   price: 620000,
+#   bedrooms: 4,
+#   bathrooms: 3,
+#   square_feet: 2600,
+#   lot_size: 0.8,
+#   built_date: 2013,
+#   property_type: 'Cabin',
+#   seller_id: 1,
+#   description: 'Escape to the serene beauty of Bend, Oregon, with this charming cabin at 456 Pinecrest Lane. Offering four bedrooms and three baths, this cabin is a retreat for all seasons. Nestled on a 0.8-acre lot and built in 2013, the property combines rustic charm with modern comfort. Imagine enjoying the mountain views from the cozy living room or relaxing on the spacious deck. The 2600 square feet of living space provides ample room for relaxation and entertaining. Experience the magic of Bend in this inviting and idyllic cabin.',
+#   latitude: 44.0719,
+#   longitude: -121.3153
+# )
 
-Home.create!(
-  address: '789 Elmwood Avenue',
-  city: 'Lake Placid',
-  state: 'NY',
-  zipcode: '12946',
-  price: 800000,
-  bedrooms: 5,
-  bathrooms: 4.5,
-  square_feet: 3500,
-  lot_size: 1.0,
-  built_date: 2005,
-  property_type: 'Dwelling',
-  seller_id: 1,
-  description: 'Discover the enchanting beauty of Lake Placid, New York, in this modern dwelling at 789 Elmwood Avenue. With five bedrooms and four and a half baths, this home offers contemporary design surrounded by the stunning landscapes of the Adirondacks. Built in 2005, the property features sleek architecture and spacious living. Imagine enjoying the private backyard with views of Mirror Lake or exploring the nearby Olympic Village. The 3500 square feet of living space provides comfort and style. Whether youre a nature lover or seeking a tranquil lifestyle, this dwelling in Lake Placid offers the perfect blend of luxury and natural beauty.',
-  latitude: 44.2795,
-  longitude: -73.9798
-)
+# Home.create!(
+#   address: '789 Elmwood Avenue',
+#   city: 'Lake Placid',
+#   state: 'NY',
+#   zipcode: '12946',
+#   price: 800000,
+#   bedrooms: 5,
+#   bathrooms: 4.5,
+#   square_feet: 3500,
+#   lot_size: 1.0,
+#   built_date: 2005,
+#   property_type: 'Dwelling',
+#   seller_id: 1,
+#   description: 'Discover the enchanting beauty of Lake Placid, New York, in this modern dwelling at 789 Elmwood Avenue. With five bedrooms and four and a half baths, this home offers contemporary design surrounded by the stunning landscapes of the Adirondacks. Built in 2005, the property features sleek architecture and spacious living. Imagine enjoying the private backyard with views of Mirror Lake or exploring the nearby Olympic Village. The 3500 square feet of living space provides comfort and style. Whether youre a nature lover or seeking a tranquil lifestyle, this dwelling in Lake Placid offers the perfect blend of luxury and natural beauty.',
+#   latitude: 44.2795,
+#   longitude: -73.9798
+# )
 
 Home.create!(
   address: '234 Spruce Lane',
@@ -378,23 +378,23 @@ Home.create!(
   longitude: -123.0918
 )
 
-Home.create!(
-  address: '890 Birchwood Lane',
-  city: 'Aspen',
-  state: 'CO',
-  zipcode: '81611',
-  price: 1200000,
-  bedrooms: 5,
-  bathrooms: 4.5,
-  square_feet: 4000,
-  lot_size: 1.5,
-  built_date: 2007,
-  property_type: 'Dwelling',
-  seller_id: 1,
-  description: 'Indulge in the luxury of Aspen, Colorado, with this exquisite dwelling at 890 Birchwood Lane. Boasting five bedrooms and four and a half baths, this home offers sophistication and comfort in the heart of the Rockies. Built in 2007, the property features elegant design and breathtaking mountain views. Imagine entertaining in the spacious living areas or relaxing in the private outdoor spaces. The 4000 square feet of living space provides ample room for both intimate gatherings and larger events. Experience the opulence of Aspen living in this stunning and meticulously crafted dwelling.',
-  latitude: 39.1840,
-  longitude: -106.8175
-)
+# Home.create!(
+#   address: '890 Birchwood Lane',
+#   city: 'Aspen',
+#   state: 'CO',
+#   zipcode: '81611',
+#   price: 1200000,
+#   bedrooms: 5,
+#   bathrooms: 4.5,
+#   square_feet: 4000,
+#   lot_size: 1.5,
+#   built_date: 2007,
+#   property_type: 'Dwelling',
+#   seller_id: 1,
+#   description: 'Indulge in the luxury of Aspen, Colorado, with this exquisite dwelling at 890 Birchwood Lane. Boasting five bedrooms and four and a half baths, this home offers sophistication and comfort in the heart of the Rockies. Built in 2007, the property features elegant design and breathtaking mountain views. Imagine entertaining in the spacious living areas or relaxing in the private outdoor spaces. The 4000 square feet of living space provides ample room for both intimate gatherings and larger events. Experience the opulence of Aspen living in this stunning and meticulously crafted dwelling.',
+#   latitude: 39.1840,
+#   longitude: -106.8175
+# )
 
 Home.create!(
   address: '123 Pinehurst Lane',
@@ -522,41 +522,41 @@ Home.create!(
   longitude: -105.2705
 )
 
-Home.create!(
-  address: '456 Lakeside Drive',
-  city: 'Portland',
-  state: 'OR',
-  zipcode: '97201',
-  price: 650000,
-  bedrooms: 3,
-  bathrooms: 2.5,
-  square_feet: 2300,
-  lot_size: 0.8,
-  built_date: 2013,
-  property_type: 'Cabin',
-  seller_id: 1,
-  description: 'Escape to the Pacific Northwest with this charming cabin at 456 Lakeside Drive in Portland, Oregon. Offering three bedrooms and two and a half baths, this cabin is a retreat for all seasons. Nestled on a 0.8-acre lot and built in 2013, the property combines rustic charm with modern comfort. Imagine enjoying the serene views of the nearby lake from the cozy living room or exploring the lush surroundings. The 2300 square feet of living space provides ample room for relaxation and entertaining. Experience the magic of Portland in this welcoming and idyllic cabin.',
-  latitude: 45.5122,
-  longitude: -122.6587
-)
+# Home.create!(
+#   address: '456 Lakeside Drive',
+#   city: 'Portland',
+#   state: 'OR',
+#   zipcode: '97201',
+#   price: 650000,
+#   bedrooms: 3,
+#   bathrooms: 2.5,
+#   square_feet: 2300,
+#   lot_size: 0.8,
+#   built_date: 2013,
+#   property_type: 'Cabin',
+#   seller_id: 1,
+#   description: 'Escape to the Pacific Northwest with this charming cabin at 456 Lakeside Drive in Portland, Oregon. Offering three bedrooms and two and a half baths, this cabin is a retreat for all seasons. Nestled on a 0.8-acre lot and built in 2013, the property combines rustic charm with modern comfort. Imagine enjoying the serene views of the nearby lake from the cozy living room or exploring the lush surroundings. The 2300 square feet of living space provides ample room for relaxation and entertaining. Experience the magic of Portland in this welcoming and idyllic cabin.',
+#   latitude: 45.5122,
+#   longitude: -122.6587
+# )
 
-Home.create!(
-  address: '789 Pinehill Lane',
-  city: 'Bozeman',
-  state: 'MT',
-  zipcode: '59715',
-  price: 850000,
-  bedrooms: 5,
-  bathrooms: 4,
-  square_feet: 3200,
-  lot_size: 1.1,
-  built_date: 2010,
-  property_type: 'Dwelling',
-  seller_id: 1,
-  description: 'Immerse yourself in the beauty of Bozeman, Montana, with this modern dwelling at 789 Pinehill Lane. Boasting five bedrooms and four baths, this home offers contemporary design surrounded by the stunning landscapes of the Gallatin Valley. Built in 2010, the property features sleek architecture and spacious living. Imagine enjoying the private backyard with views of the Bridger Range or exploring the nearby hiking trails. The 3200 square feet of living space provides comfort and style. Whether you\'re an outdoor enthusiast or seeking a vibrant community, this dwelling in Bozeman offers the perfect blend of luxury and natural beauty.',
-  latitude: 45.6770,
-  longitude: -111.0429
-)
+# Home.create!(
+#   address: '789 Pinehill Lane',
+#   city: 'Bozeman',
+#   state: 'MT',
+#   zipcode: '59715',
+#   price: 850000,
+#   bedrooms: 5,
+#   bathrooms: 4,
+#   square_feet: 3200,
+#   lot_size: 1.1,
+#   built_date: 2010,
+#   property_type: 'Dwelling',
+#   seller_id: 1,
+#   description: 'Immerse yourself in the beauty of Bozeman, Montana, with this modern dwelling at 789 Pinehill Lane. Boasting five bedrooms and four baths, this home offers contemporary design surrounded by the stunning landscapes of the Gallatin Valley. Built in 2010, the property features sleek architecture and spacious living. Imagine enjoying the private backyard with views of the Bridger Range or exploring the nearby hiking trails. The 3200 square feet of living space provides comfort and style. Whether you\'re an outdoor enthusiast or seeking a vibrant community, this dwelling in Bozeman offers the perfect blend of luxury and natural beauty.',
+#   latitude: 45.6770,
+#   longitude: -111.0429
+# )
 
 Home.create!(
   address: '234 Elm Street',
@@ -684,23 +684,23 @@ Home.create!(
   longitude: -85.6206
 )
 
-Home.create!(
-  address: '456 Cedar Street',
-  city: 'Ely',
-  state: 'MN',
-  zipcode: '55731',
-  price: 600000,
-  bedrooms: 4,
-  bathrooms: 3,
-  square_feet: 2400,
-  lot_size: 0.7,
-  built_date: 2012,
-  property_type: 'Cabin',
-  seller_id: 1,
-  description: 'Escape to the wilderness charm of Ely, Minnesota, with this inviting cabin at 456 Cedar Street. Offering four bedrooms and three baths, this cabin is a retreat for all seasons. Nestled on a 0.7-acre lot and built in 2012, the property combines rustic charm with modern comfort. Imagine enjoying the peaceful views of the Boundary Waters from the cozy living room or exploring the nearby lakes and forests. The 2400 square feet of living space provides ample room for relaxation and entertaining. Experience the magic of Ely in this welcoming and idyllic cabin.',
-  latitude: 47.9030,
-  longitude: -91.8678
-)
+# Home.create!(
+#   address: '456 Cedar Street',
+#   city: 'Ely',
+#   state: 'MN',
+#   zipcode: '55731',
+#   price: 600000,
+#   bedrooms: 4,
+#   bathrooms: 3,
+#   square_feet: 2400,
+#   lot_size: 0.7,
+#   built_date: 2012,
+#   property_type: 'Cabin',
+#   seller_id: 1,
+#   description: 'Escape to the wilderness charm of Ely, Minnesota, with this inviting cabin at 456 Cedar Street. Offering four bedrooms and three baths, this cabin is a retreat for all seasons. Nestled on a 0.7-acre lot and built in 2012, the property combines rustic charm with modern comfort. Imagine enjoying the peaceful views of the Boundary Waters from the cozy living room or exploring the nearby lakes and forests. The 2400 square feet of living space provides ample room for relaxation and entertaining. Experience the magic of Ely in this welcoming and idyllic cabin.',
+#   latitude: 47.9030,
+#   longitude: -91.8678
+# )
 
 Home.create!(
   address: '789 Pinecrest Drive',
@@ -954,23 +954,23 @@ Home.create!(
   longitude: -92.1005
 )
 
-Home.create!(
-  address: '456 Hickory Street',
-  city: 'Fairbanks',
-  state: 'AK',
-  zipcode: '99701',
-  price: 600000,
-  bedrooms: 4,
-  bathrooms: 3,
-  square_feet: 2400,
-  lot_size: 0.7,
-  built_date: 2012,
-  property_type: 'Cabin',
-  seller_id: 1,
-  description: 'Escape to the wild beauty of Fairbanks, Alaska, with this inviting cabin at 456 Hickory Street. Offering four bedrooms and three baths, this cabin is a retreat for all seasons. Nestled in the heart of the Last Frontier and built in 2012, the property combines rustic charm with modern comfort. Imagine experiencing the Northern Lights from your backyard or exploring the vast wilderness. The 2400 square feet of living space provides ample room for relaxation and entertaining. Experience the magic of Fairbanks in this welcoming and idyllic cabin.',
-  latitude: 64.8378,
-  longitude: -147.7164
-)
+# Home.create!(
+#   address: '456 Hickory Street',
+#   city: 'Fairbanks',
+#   state: 'AK',
+#   zipcode: '99701',
+#   price: 600000,
+#   bedrooms: 4,
+#   bathrooms: 3,
+#   square_feet: 2400,
+#   lot_size: 0.7,
+#   built_date: 2012,
+#   property_type: 'Cabin',
+#   seller_id: 1,
+#   description: 'Escape to the wild beauty of Fairbanks, Alaska, with this inviting cabin at 456 Hickory Street. Offering four bedrooms and three baths, this cabin is a retreat for all seasons. Nestled in the heart of the Last Frontier and built in 2012, the property combines rustic charm with modern comfort. Imagine experiencing the Northern Lights from your backyard or exploring the vast wilderness. The 2400 square feet of living space provides ample room for relaxation and entertaining. Experience the magic of Fairbanks in this welcoming and idyllic cabin.',
+#   latitude: 64.8378,
+#   longitude: -147.7164
+# )
 
 Home.create!(
   address: '789 Cedarwood Drive',
@@ -990,77 +990,77 @@ Home.create!(
   longitude: -100.7790
 )
 
-Home.create!(
-  address: '123 Birchwood Lane',
-  city: 'Sault Ste. Marie',
-  state: 'MI',
-  zipcode: '49783',
-  price: 550000,
-  bedrooms: 3,
-  bathrooms: 2.5,
-  square_feet: 2200,
-  lot_size: 0.6,
-  built_date: 2013,
-  property_type: 'Single-Family',
-  seller_id: 1,
-  description: 'Discover the charm of Sault Ste. Marie, Michigan, in this elegant single-family home at 123 Birchwood Lane. With three bedrooms and two and a half baths, this residence offers a perfect blend of modern luxury and northern living. Built in 2013, the property features classic design and comfortable living areas. Imagine watching ships pass through the Soo Locks or exploring the scenic Upper Peninsula. The 2200 square feet of living space provides both comfort and style. Make Sault Ste. Marie your home and experience the beauty and tranquility of this unique northern town.',
-  latitude: 46.4922,
-  longitude: -84.3640
-)
+# Home.create!(
+#   address: '123 Birchwood Lane',
+#   city: 'Sault Ste. Marie',
+#   state: 'MI',
+#   zipcode: '49783',
+#   price: 550000,
+#   bedrooms: 3,
+#   bathrooms: 2.5,
+#   square_feet: 2200,
+#   lot_size: 0.6,
+#   built_date: 2013,
+#   property_type: 'Single-Family',
+#   seller_id: 1,
+#   description: 'Discover the charm of Sault Ste. Marie, Michigan, in this elegant single-family home at 123 Birchwood Lane. With three bedrooms and two and a half baths, this residence offers a perfect blend of modern luxury and northern living. Built in 2013, the property features classic design and comfortable living areas. Imagine watching ships pass through the Soo Locks or exploring the scenic Upper Peninsula. The 2200 square feet of living space provides both comfort and style. Make Sault Ste. Marie your home and experience the beauty and tranquility of this unique northern town.',
+#   latitude: 46.4922,
+#   longitude: -84.3640
+# )
 
-Home.create!(
-  address: '456 Maplewood Street',
-  city: 'Coeur d Alene',
-  state: 'ID',
-  zipcode: '83814',
-  price: 600000,
-  bedrooms: 4,
-  bathrooms: 3,
-  square_feet: 2400,
-  lot_size: 0.7,
-  built_date: 2012,
-  property_type: 'Cabin',
-  seller_id: 1,
-  description: 'Escape to the scenic beauty of Coeur d Alene, Idaho, with this inviting cabin at 456 Maplewood Street. Offering four bedrooms and three baths, this cabin is a retreat for all seasons. Nestled on the shores of Lake Coeur d\'Alene and built in 2012, the property combines rustic charm with modern comfort. Imagine hiking in the nearby national forests or enjoying water activities on the lake. The 2400 square feet of living space provides ample room for relaxation and entertaining. Experience the magic of Coeur d\'Alene in this welcoming and idyllic cabin.',
-  latitude: 47.6732,
-  longitude: -116.7813
-)
+# Home.create!(
+#   address: '456 Maplewood Street',
+#   city: 'Coeur d Alene',
+#   state: 'ID',
+#   zipcode: '83814',
+#   price: 600000,
+#   bedrooms: 4,
+#   bathrooms: 3,
+#   square_feet: 2400,
+#   lot_size: 0.7,
+#   built_date: 2012,
+#   property_type: 'Cabin',
+#   seller_id: 1,
+#   description: 'Escape to the scenic beauty of Coeur d Alene, Idaho, with this inviting cabin at 456 Maplewood Street. Offering four bedrooms and three baths, this cabin is a retreat for all seasons. Nestled on the shores of Lake Coeur d\'Alene and built in 2012, the property combines rustic charm with modern comfort. Imagine hiking in the nearby national forests or enjoying water activities on the lake. The 2400 square feet of living space provides ample room for relaxation and entertaining. Experience the magic of Coeur d\'Alene in this welcoming and idyllic cabin.',
+#   latitude: 47.6732,
+#   longitude: -116.7813
+# )
 
-Home.create!(
-  address: '789 Cedar Lane',
-  city: 'Juneau',
-  state: 'AK',
-  zipcode: '99801',
-  price: 800000,
-  bedrooms: 5,
-  bathrooms: 4.5,
-  square_feet: 3500,
-  lot_size: 1.0,
-  built_date: 2006,
-  property_type: 'Dwelling',
-  seller_id: 1,
-  description: 'Immerse yourself in the natural beauty of Juneau, Alaska, with this modern dwelling at 789 Cedar Lane. Boasting five bedrooms and four and a half baths, this home offers contemporary design surrounded by the majestic landscapes of Southeast Alaska. Built in 2006, the property features sleek architecture and spacious living. Imagine whale watching from your balcony or exploring the nearby glaciers. The 3500 square feet of living space provides comfort and style. Whether you seek outdoor adventures or a laid-back lifestyle, this dwelling in Juneau offers the perfect blend of luxury and regional charm.',
-  latitude: 58.3019,
-  longitude: -134.4197
-)
+# Home.create!(
+#   address: '789 Cedar Lane',
+#   city: 'Juneau',
+#   state: 'AK',
+#   zipcode: '99801',
+#   price: 800000,
+#   bedrooms: 5,
+#   bathrooms: 4.5,
+#   square_feet: 3500,
+#   lot_size: 1.0,
+#   built_date: 2006,
+#   property_type: 'Dwelling',
+#   seller_id: 1,
+#   description: 'Immerse yourself in the natural beauty of Juneau, Alaska, with this modern dwelling at 789 Cedar Lane. Boasting five bedrooms and four and a half baths, this home offers contemporary design surrounded by the majestic landscapes of Southeast Alaska. Built in 2006, the property features sleek architecture and spacious living. Imagine whale watching from your balcony or exploring the nearby glaciers. The 3500 square feet of living space provides comfort and style. Whether you seek outdoor adventures or a laid-back lifestyle, this dwelling in Juneau offers the perfect blend of luxury and regional charm.',
+#   latitude: 58.3019,
+#   longitude: -134.4197
+# )
 
-Home.create!(
-  address: '123 Pinecrest Lane',
-  city: 'Ely',
-  state: 'MN',
-  zipcode: '55731',
-  price: 550000,
-  bedrooms: 3,
-  bathrooms: 2.5,
-  square_feet: 2200,
-  lot_size: 0.6,
-  built_date: 2013,
-  property_type: 'Single-Family',
-  seller_id: 1,
-  description: 'Discover the tranquility of Ely, Minnesota, in this elegant single-family home at 123 Pinecrest Lane. With three bedrooms and two and a half baths, this residence offers a perfect blend of modern luxury and northern living. Built in 2013, the property features classic design and comfortable living areas. Imagine canoeing on the Boundary Waters or exploring the scenic beauty of the Northwoods. The 2200 square feet of living space provides both comfort and style. Make Ely your home and experience the charm and natural beauty of this unique northern town.',
-  latitude: 47.9022,
-  longitude: -91.8678
-)
+# Home.create!(
+#   address: '123 Pinecrest Lane',
+#   city: 'Ely',
+#   state: 'MN',
+#   zipcode: '55731',
+#   price: 550000,
+#   bedrooms: 3,
+#   bathrooms: 2.5,
+#   square_feet: 2200,
+#   lot_size: 0.6,
+#   built_date: 2013,
+#   property_type: 'Single-Family',
+#   seller_id: 1,
+#   description: 'Discover the tranquility of Ely, Minnesota, in this elegant single-family home at 123 Pinecrest Lane. With three bedrooms and two and a half baths, this residence offers a perfect blend of modern luxury and northern living. Built in 2013, the property features classic design and comfortable living areas. Imagine canoeing on the Boundary Waters or exploring the scenic beauty of the Northwoods. The 2200 square feet of living space provides both comfort and style. Make Ely your home and experience the charm and natural beauty of this unique northern town.',
+#   latitude: 47.9022,
+#   longitude: -91.8678
+# )
 
 Home.create!(
   address: '456 Cedarwood Street',
@@ -1080,23 +1080,23 @@ Home.create!(
   longitude: -116.5535
 )
 
-Home.create!(
-  address: '789 Redwood Lane',
-  city: 'Sitka',
-  state: 'AK',
-  zipcode: '99835',
-  price: 800000,
-  bedrooms: 5,
-  bathrooms: 4.5,
-  square_feet: 3500,
-  lot_size: 1.0,
-  built_date: 2006,
-  property_type: 'Dwelling',
-  seller_id: 1,
-  description: 'Immerse yourself in the coastal beauty of Sitka, Alaska, with this modern dwelling at 789 Redwood Lane. Boasting five bedrooms and four and a half baths, this home offers contemporary design surrounded by the majestic landscapes of Southeast Alaska. Built in 2006, the property features sleek architecture and spacious living. Imagine whale watching from your balcony or exploring the rich history of Sitka. The 3500 square feet of living space provides comfort and style. Whether you seek outdoor adventures or a laid-back lifestyle, this dwelling in Sitka offers the perfect blend of luxury and regional charm.',
-  latitude: 57.0531,
-  longitude: -135.3300
-)
+# Home.create!(
+#   address: '789 Redwood Lane',
+#   city: 'Sitka',
+#   state: 'AK',
+#   zipcode: '99835',
+#   price: 800000,
+#   bedrooms: 5,
+#   bathrooms: 4.5,
+#   square_feet: 3500,
+#   lot_size: 1.0,
+#   built_date: 2006,
+#   property_type: 'Dwelling',
+#   seller_id: 1,
+#   description: 'Immerse yourself in the coastal beauty of Sitka, Alaska, with this modern dwelling at 789 Redwood Lane. Boasting five bedrooms and four and a half baths, this home offers contemporary design surrounded by the majestic landscapes of Southeast Alaska. Built in 2006, the property features sleek architecture and spacious living. Imagine whale watching from your balcony or exploring the rich history of Sitka. The 3500 square feet of living space provides comfort and style. Whether you seek outdoor adventures or a laid-back lifestyle, this dwelling in Sitka offers the perfect blend of luxury and regional charm.',
+#   latitude: 57.0531,
+#   longitude: -135.3300
+# )
 
 
 puts "Creating searches..."
