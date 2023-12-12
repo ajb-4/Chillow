@@ -13,7 +13,6 @@ const ImageAndSearch = () => {
     const dispatch = useDispatch();
 
     const handleSearch = async (e) => {
-        e.preventDefault();
  
         dispatch(filterActions.fetchFilterResults({ 
             priceMin: "",
@@ -34,6 +33,12 @@ const ImageAndSearch = () => {
         history.push(`/homes`)
     }
 
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleSearch();
+        }
+    };
+
     return (
         <>
             <div id='backgroundphoto-container'>
@@ -44,7 +49,8 @@ const ImageAndSearch = () => {
                         id='searchinput-mainpage'
                         placeholder="Find homes by state, city, or zipcode"
                         value={phrase}
-                        onChange={(e) => setPhrase(e.target.value)}>
+                        onChange={(e) => setPhrase(e.target.value)}
+                        onKeyDown={handleKeyPress}>
                     </input>
                     <i class="fa-solid fa-magnifying-glass" onClick={handleSearch}></i>
                 </div>

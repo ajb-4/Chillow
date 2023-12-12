@@ -19,8 +19,14 @@ const CreateSearch = () => {
 
     const sessionUser = useSelector(state => state.session.user);
 
+    const handleKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleSearch();
+        }
+    };
+
     const handleSearch = async (e) => {
-        e.preventDefault();
+
  
         return dispatch(filterActions.fetchFilterResults({ 
             priceMin,
@@ -79,6 +85,7 @@ const CreateSearch = () => {
                         placeholder="Find your home"
                         value={phrase}
                         onChange={(e) => setPhrase(e.target.value)}
+                        onKeyDown={handleKeyPress}
                         >
                     </input>
                 </div>
