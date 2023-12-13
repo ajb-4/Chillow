@@ -4,7 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './HomeIndexItem.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
-import { createLike, deleteLike } from '../../store/likes';
+import { fetchLikes, createLike, deleteLike } from '../../store/likes';
 
 
 
@@ -24,13 +24,17 @@ const HomeIndexItem = ({home}) => {
     // }
 
     useEffect(() => {
+
         if (sessionUser) {
             const likesArray = Object.values(likes);
+
             if (likesArray.length > 0) {
                 const hasLiked = likesArray.some(
                     (like) => like.likerId === sessionUser.id && like.homeId === home.id
                 );
                 setHomeLiked(hasLiked);
+            } else {
+                setHomeLiked(false);
             }
         }
     }, [likes, home.id, dispatch]);
@@ -43,7 +47,7 @@ const HomeIndexItem = ({home}) => {
     const images = home.photoArray;
 
     const handleClick = (e) => {
-        if (e.target.classList[0] !== "dot") {
+        if (e.target.classList[0] !== "dot" && e.target.classList[0] !== "control-arrow") {
             history.push(`/homes/${home.id}`)
         }
     }

@@ -85,8 +85,10 @@ const likesReducer = (state = {}, action) => {
     let newState = { ...state };
     switch (action.type) {
         case RECEIVE_LIKE:
-            newState[action.like.id] = action.like;
-            return newState;
+            return {
+              ...state,
+              [action.like.like.id]: action.like.like,
+            };          
         case RECEIVE_LIKES:
             action.likes.forEach((like) => {
                 newState[like.id] = like;

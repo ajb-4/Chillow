@@ -28,6 +28,11 @@
     font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
 }
 
+#signin-button:hover {
+    cursor: pointer;
+    color: #1277e1;
+}
+
 #signin-up-profilebutton {
     display: flex;
     justify-content: center;
@@ -35,6 +40,7 @@
 
 #navbar-sessionlink:hover {
     cursor: pointer;
+    color: #1277e1;
 }
 
 .navbar {

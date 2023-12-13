@@ -26,6 +26,7 @@
     display: none;
 }
 
+
 #homeindexitemheart-container {
     position: absolute;
     top: 9px;
@@ -50,6 +51,14 @@
 
 #homeindexitemheart-container i:hover {
     color: rgba(0, 0, 0, 0.59);
+}
+
+#homeindexitem-heart:hover #homeindexitemheart-container i {
+    color: rgba(0, 0, 0, 0.59);
+}
+
+#homeindexitem-heart:hover #homeindexitemheart-container-white i {
+    color: rgba(255, 255, 255, 0.8); /* Adjusted alpha value for visibility */
 }
 
 #homeindexitemheart-border {
@@ -99,8 +108,3 @@
 #homeindexitemaddress div {
     margin: 2px;
 }
-
-button.control-next[aria-label="next slide / item"] {
-    z-index: 2;
-}
-  
