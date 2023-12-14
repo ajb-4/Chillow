@@ -28,10 +28,8 @@ const PropertyHome = () => {
           <CreateSearch/>
       </div>
       <div id='propertyhome-mapandindexcontainer'>
-        <div id='properrtyhome-mapcontainer'>
-          <div id='prophome-map'>
-            <ChillowMap/>
-          </div>
+        <div id='prophome-map'>
+          <ChillowMap/>
         </div>
         <div id='propertyhome-indexcontainer'>
           <div id='propertyhome-indexheader'>Chill Real Estate and Homes for Sale</div>
@@ -39,8 +37,6 @@ const PropertyHome = () => {
             <PropertyHomeIndex/>
           </div>
         </div>
-
-
       </div>
       {/* render the home index here */}
       {homeId && <ShowModal open={isOpen} onClose={setClose} modalStyle='homeShowModalStyle'>

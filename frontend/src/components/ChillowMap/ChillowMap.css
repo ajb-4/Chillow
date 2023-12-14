@@ -1,11 +1,9 @@
 #chillowmap-outtercontainer {
     overflow: hidden;
     flex-grow: 1;
-    margin: 30px;
-    height: 800px;
-    width: 800px;
+    height: 85vh;
+    width: calc(100vw - 740px);
     display: flex;
-    /* border: 1px solid greenyellow; */
 }
 
 #mapmarker {

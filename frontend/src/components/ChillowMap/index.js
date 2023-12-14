@@ -35,7 +35,7 @@ const ChillowMap = (props) => {
                     google={props.google}
                     zoom={7}
                     initialCenter={{ lat: 44, lng: -72 }}
-                    style={{ width: '800px', height: '800px'}}
+                    style={{ width: 'calc(100vw - 740px)', height: '85vh'}}
                     center={{ lat: 44, lng: -72 }}
                 >
                     {filteredHomes.length > 0 ? (
