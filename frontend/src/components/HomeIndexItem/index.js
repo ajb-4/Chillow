@@ -87,13 +87,6 @@ const HomeIndexItem = ({home}) => {
             {/* <Link to={`/homes/${home.id}`} className="no-link-underline"> */}
             <div id="homeindexitem-outtercontainer" onClick={handleClick}>
                
-                <div id='thumbnailphoto-carousel' className='test'>
-                    <Carousel>
-                        {images.map((photo, index) => (
-                            <img key={index} src={photo} alt={`Photo ${index}`} id='thumbnailphoto'/>
-                        ))}
-                    </Carousel>
-                </div>
                 <div id='homeindexitem-heart' onClick={handleLike}>
                     <div id='homeindexitemheart-border'>
                         <i class="fa-regular fa-heart"></i>
@@ -102,30 +95,39 @@ const HomeIndexItem = ({home}) => {
                         <i class="fa-sharp fa-solid fa-heart"></i>
                     </div>
                 </div>
-                <div id='homeindexitemdetail-container'>
-                    <div id='homeindexitemprice-container'>
-                        <div id='homeindexitemprice'>${home.price?.toLocaleString()}</div>
+                <div style={{ width: "100%", height: "100%"}}>
+                    <div id='thumbnailphoto-carousel' className='test'>
+                        <Carousel>
+                            {images.map((photo, index) => (
+                                <img key={index} src={photo} alt={`Photo ${index}`} id='thumbnailphoto'/>
+                            ))}
+                        </Carousel>
                     </div>
-                    <div id='indexitem-numericaldetails'>
-                        <div id='homeindexitembeds'>{home.bedrooms} bds</div>
-                        <div className='homeindexsepbars'>|</div>
-                        <div id='homeindexitembeds'>{home.bathrooms} ba</div>
-                        <div className='homeindexsepbars'>|</div>
-                        <div id="homeindexitemsquarefeet">{home.squareFeet?.toLocaleString()} sqft</div>
-                        <div className='homeindexsepbars'>|</div>
-                        <div>Active</div>
+                    <div id='homeindexitemdetail-container'>
+                        <div id='homeindexitemprice-container'>
+                            <div id='homeindexitemprice'>${home.price?.toLocaleString()}</div>
+                        </div>
+                        <div id='indexitem-numericaldetails'>
+                            <div id='homeindexitembeds'>{home.bedrooms} bds</div>
+                            <div className='homeindexsepbars'>|</div>
+                            <div id='homeindexitembeds'>{home.bathrooms} ba</div>
+                            <div className='homeindexsepbars'>|</div>
+                            <div id="homeindexitemsquarefeet">{home.squareFeet?.toLocaleString()} sqft</div>
+                            <div className='homeindexsepbars'>|</div>
+                            <div>Active</div>
+                        </div>
+                        <div id='homeindexitemaddress'>
+                            <div>{home.address},</div>
+                            <div>{home.city},</div>
+                            <div>{home.state}</div>
+                            <div>{home.zipcode}</div>
+                        </div>
+                            {/* <Link to={`/homes/${home.id}`}>Link to Show</Link> */}
+                            {/* <ShowModal open={isOpen} onClose={() => setIsOpen(false)} modalStyle='homeShowModalStyle'>
+                                    <HomeShow homeId={home.id}/>
+                            </ShowModal> */}
                     </div>
-                    <div id='homeindexitemaddress'>
-                        <div>{home.address},</div>
-                        <div>{home.city},</div>
-                        <div>{home.state}</div>
-                        <div>{home.zipcode}</div>
                     </div>
-                        {/* <Link to={`/homes/${home.id}`}>Link to Show</Link> */}
-                        {/* <ShowModal open={isOpen} onClose={() => setIsOpen(false)} modalStyle='homeShowModalStyle'>
-                                <HomeShow homeId={home.id}/>
-                        </ShowModal> */}
-                </div>
             </div>
             {/* </Link> */}
         </>

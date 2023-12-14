@@ -1,5 +1,6 @@
 #homeindexitem-outtercontainer {
     height: 280px;
+    position: relative;
 }
 
 #homeindexitem-outtercontainer:hover {
@@ -24,6 +25,13 @@
 
 .carousel-status {
     display: none;
+}
+
+#homeindexitem-heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
 }
 
 
