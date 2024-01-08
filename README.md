@@ -22,7 +22,7 @@ First, I built index and show pages for home listings. On the splash page, an in
 <img width="1323" alt="Screenshot 2024-01-08 at 6 31 28 PM" src="https://github.com/ajb-4/Chillow/assets/114460756/113fc285-8300-4d24-bf54-2a91257abea2">
 
 #### Search Filters
-After clicking away from a home show page, users are brought to a search page where a "create search" form is fixed at the top of the page. After filling in values, users can createa and save these search filters by clicking "Save search" and view their "Saved searches" in the dropdown under the profile button. Inside each user's "Saved searches" index page, users can also read, update and dekete each of these search filters.
+After clicking away from a home show page, users are brought to a search page where a "create search" form is fixed at the top of the page. After filling in values, users can createa and save these search filters by clicking "Save search" and view their "Saved searches" in the dropdown under the profile button. Inside each user's "Saved searches" index page, users can also view, update and delete each of these search filters.
 
 
 <img width="1301" alt="Screenshot 2024-01-08 at 6 32 18 PM" src="https://github.com/ajb-4/Chillow/assets/114460756/154ff4c3-93b9-40f4-a184-7315ef746734">
