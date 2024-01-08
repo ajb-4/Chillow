@@ -2,7 +2,8 @@
 
 Hello, and welcome to Chillow, a full-stack clone of Zillow built with Postgre(database), Rails(backend), and Javascript/React(frontend). AWS was used for cloud storage of images.
 
-The application is hosted on Render and can be found here: https://zillow-clone.onrender.com/
+The application is hosted on Render and can be found here: 
+<a href="https://chillow-xur2.onrender.com/">Chillow Live Site</a>
 
 ## Features
 In addition to user authentication, I have implemented 4 MVP features. 
